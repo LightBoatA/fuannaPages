@@ -23,25 +23,18 @@
 ![富安娜首页](./screenshot/富安娜首页.png)
 
 
-
 #### 购物车页
 
-![购物车页](.\screenshot\购物车页.png)
+![购物车页](./screenshot/购物车页.png)
 
 #### 详情页
 
-![详情页](.\screenshot\详情页.png)
+![详情页](./screenshot/详情页.png)
 
 #### 注册页
 
-![image-20211108222724442](.\screenshot\image-20211108222724442.png)
-
-
-
-
-
-
+![注册页](./screenshot/image-20211108222724442.png)
 
 #### 登录页
 
-![image-20211108222436417](.\screenshot\image-20211108222436417.png)
+![登录页](./screenshot/image-20211108222436417.png)
