@@ -1,0 +1,2428 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../dist/css/swiper.min.css">
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<link rel="stylesheet"href="../css/bootstrap-theme.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/header.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/footer.css"/>
+		<script type="text/javascript" src="../js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="../js/jquery.min.js" ></script>
+		<style>
+		   /* *{
+				margin: 0;
+				padding:0;
+			}*/
+			#div1 {
+				float: left;
+				width:30%;
+				height:560px;
+				margin: 50px;
+			}
+			
+			#div2 {
+				float: left;
+				width: 35%;
+				height: 680px;
+	            margin: 32px;
+			}
+			
+			#div3 {
+				width: 1348px;
+				height: 610px;
+			}
+			
+			#div4 {
+				float: left;
+				width: 12%;
+				height: 646px;
+		        margin: 50px;
+			}
+			
+			.div5 {
+				margin-top: 18px;
+				margin-bottom: 4px;
+				width: 560px;	
+			}
+			.div5one {
+				margin-top:0;
+				margin-bottom: 11px;
+				width: 560px;	
+			}
+			.div5two {
+				margin-top:50px;
+				margin-left:70px;
+				margin-bottom: 11px;
+				width: 560px;	
+			}
+			#div6 {
+				width: 1348px;
+				height:auto;
+				
+			}
+				#div7 {
+				float: left;
+				width:195px;
+				height: auto;
+				margin: 0 5px 0 80px;
+			}
+			
+			#div8 {
+				float: left;
+				width: 791px;
+				height: auto;
+				margin: 0 0 0 30px;
+			}
+			
+			#div9 {
+				float: left;
+				width: 200px;
+				height: auto;
+				margin: 0;
+			}
+			
+			.div10 {
+				border: 1px solid #e5e5e5;
+				background-color: #FBFBFB;
+				height: 48px;
+				width: 190px;
+				margin: 0 0 0 30px;
+			
+			}
+			.div11 {
+				border: 1px solid #e5e5e5;
+				height: 48px;
+				width: 791px;
+			
+			}
+			#div12{
+				padding-left: 20px;
+				width: 180px;
+				height: 350px;
+				background-color:whitesmoke;
+			}
+			
+			.div13 {
+				float: left;
+				width: 791px;
+				height: 123px;
+				border: 1px solid #e5e5e5;
+				margin: 0;
+			}
+			#div14{
+				width: 190px;
+				height: 150px;
+				border: 1px solid #e5e5e5;
+				margin: 0 0 0 30px;
+			}
+		
+		#div16{
+			display: none;		
+			
+		}
+			#div17 {
+				float: left;
+				width: 791px;
+				height: 290px;
+				border: 1px solid #e5e5e5;
+				margin: 0;
+			}
+			#div18{
+				width: 190px;
+				height: 360px;
+				border: 1px solid #e5e5e5;
+				margin: 0 0 0 30px;
+			}
+			#div19{
+				width: 190px;
+				height: 170px;
+				border: 1px solid #e5e5e5;
+				margin: 0 0 0 30px;
+			}
+			.div20{
+				width: 791px;
+				height: auto;
+				border: 1px solid #e5e5e5;
+				margin: 0;
+			}
+			#div21{
+					float: left;
+				width: 791px;
+				height: 83px;
+				border: 1px solid #e5e5e5;
+				margin: 0;
+			}
+			#div22{
+					float: left;
+				width: 791px;
+				height: 23px;
+				border: 1px solid #e5e5e5;
+				background-color: #efefef;
+				margin:0;
+				
+			}
+			.div23{
+				width: 400px;
+				height: auto;
+				margin: 5px 0 0 0;
+				font-family: "微软雅黑";
+				font-size: 12px;
+				color:#363636;
+			}
+			.div24{
+				width: 150px;
+				height: auto;
+				margin: 5px 0 0 100px;
+				font-family: "微软雅黑";
+				font-size: 14px;
+			}
+			.div25{
+				width: 80px;
+				height: auto;
+				margin: 5px 0 0 10px;
+				font-family: "微软雅黑";
+				font-size: 14px;
+			}
+			.div26{
+				width: 791px;
+				height: auto;
+				background-color: #FF0036;
+				font-size: 14px;
+				color: #FFFFEB;
+				font-family: "微软雅黑";
+				border: 1px solid #e5e5e5;
+			}
+			.div27{
+				width: 380px;
+				height: 20px;
+				font-family: "微软雅黑";
+				background-color:#F6F9FF;
+				margin: 10px 0 10px 10px;
+				font-size: 14px;
+			}
+			.div28{
+				width: 400px;
+				height: 20px;
+				font-family: "微软雅黑";
+				margin: 10px 0 10px 10px;
+				font-size: 16px;
+			}
+			.div29{
+				width: 791px;
+				height:210;	
+				font-size: 12px;
+				font-family: "微软雅黑";
+				border: 1px solid #ffcc7f;
+				background-color: #ffffe5;
+			}
+			.div30{
+				width: 190px;
+				height: 30px;
+				border: 1px solid #e5e5e5;
+				margin: 0 0 0 30px;
+				background-color: #f9f9f9;
+				font-family: "微软雅黑";
+				font-size: 12px;
+				line-height: 30px;
+				font-weight: 600;
+			}
+			
+			#div31{
+				width: 190px;
+				height: 30px;
+				border: 1px solid #e5e5e5;
+				margin: 0 0 0 30px;
+			}
+			#div32{
+				width: 190px;
+				height: 145px;
+				border: 1px solid #e5e5e5;
+				margin: 0 0 0 30px;
+			}
+			#div33{
+				width: 190px;
+				height: 145px;
+				border: 1px solid #e5e5e5;
+				margin: 0 0 0 30px;
+			}
+			#div34{
+				width: 190px;
+				height: 265px;
+				border: 1px solid #e5e5e5;
+				margin: 0 0 0 30px;
+			}
+			#div35{
+				width: 190px;
+				height: 195px;
+				border: 1px solid #e5e5e5;
+				margin: 0 0 0 30px;
+			}
+			#div36{
+				width: 190px;
+				height: 145px;
+				border: 1px solid #e5e5e5;
+				margin: 0 0 0 30px;
+			}
+			
+			#p1 {
+				color:#1AC51A;
+				font-family: "微软雅黑";
+				font-size:14px;
+				margin-top:15px;
+				margin-bottom:4px;
+			}
+			
+			#p2 {
+				font-family: "微软雅黑";
+				font-weight: bold;
+				font-size: 16px;
+				width: 465px;
+			}
+			
+			#p3 {
+				color: #FF0008;
+				font-family: "微软雅黑";
+				font-size:14px;
+				margin-top:4px;
+			}
+			
+			#p4 {
+				color:#989898;
+				text-align:center;
+				font-size: 12px;
+			}
+			#p5{
+				width: 500px;
+				height: 50px;
+				display: block;
+				-webkit-margin-before: 1em;
+				-webkit-margin-after: -1em;
+				-webkit-margin-start: 15px;
+				-webkit-margin-end: 0px;
+				float: left;
+				font-family: "微软雅黑";
+				color: #666666;
+				font-size: 12px;
+			}
+			#p5one{
+				width: 530px;
+				height: 50px;
+				display: block;
+				-webkit-margin-before: 0em;
+				-webkit-margin-after: 2em;
+				-webkit-margin-start: 15px;
+				-webkit-margin-end: 0px;
+				float: left;
+				font-family: "微软雅黑";
+				color: #989898;
+				font-size: 12px;
+			}
+			
+			.p6{
+				font-size:12px;
+				font-family: "微软雅黑";
+				margin: 15px 0 15px 15px;
+				color:#666666;
+			}
+			.p6one{
+				font-size:12px;
+				font-family: "微软雅黑";
+				margin: 15px 0 15px 15px;
+				color:#989898;
+				font-weight: bold;
+			}
+			#p7{
+				font-family: "微软雅黑";
+				margin: 50px 0 0 25px;
+				color: #2E0008;
+				font-size:14px;
+			}
+			.p8{
+				font-family: "微软雅黑";
+				margin: 10px 0 0 25px;
+				color: #2E0008;
+				font-size:13px;
+			}
+			#p9{
+				font-family: "微软雅黑";
+				margin: 10px 0 10px 10px;
+				font-size: 16px;
+				color: black;
+			}
+			.p10{
+				font-size: 12px;
+				font-family: "微软雅黑";
+				margin-top: 20px;
+				color:#404040;
+		     
+				
+			}
+			
+			.p11{
+				font-size: 12px;
+				font-family: "微软雅黑";
+				margin-top: 20px;
+				color:#404040;
+		     			
+			}
+			
+			#span2 {
+				color:#FF1921;
+				font-size: 12px;
+				font-weight: bold;
+			}
+			
+			#span3 ,#span4{
+				font-family: "微软雅黑";
+				font-size: 12px;
+				color:#363636;
+			}
+			
+			#span7 {
+				color:#008924;
+				font-size: 10px;
+				font-weight:bold;
+			}
+			
+			.span1 {
+				color: #989898;
+				font-size: 12px;
+			}
+			
+			.span6 {
+				color:#FF0036;
+				font-size: 10px;
+				font-weight:bold;
+			}
+			
+			#span8{
+				font-size: 12px;
+				font-family: "微软雅黑";
+				line-height: 48px;
+				cursor: pointer;
+				color:#363636;
+				
+			}
+			#span9{
+				font-size: 12px;
+				font-family: "微软雅黑";
+				line-height: 48px;
+				cursor: pointer;
+				color: #2456A9;
+			}
+			.span10{
+				font-size: 12px;
+				font-family: "微软雅黑";
+		         margin: 0px -10px 0 25px;
+				  color:#2E0008;
+			}
+			.span11{
+				font-size: 12px;
+				font-family: "微软雅黑";
+				  color: #C09459;
+			}
+			.span11one{
+				font-size: 12px;
+				font-family: "微软雅黑";
+				  color: #999999;
+			}
+				.span12{
+				font-size: 12px;
+				font-family: "微软雅黑";
+				  color: #FF0036;
+			}
+			.span13{
+				font-size: 12px;
+				font-family: "微软雅黑";
+				  color: dodgerblue;
+			}
+			.span14{
+				font-size: 12px;
+				font-family: "微软雅黑";
+				  color: dimgray;
+				  font-weight: bold;
+				  
+			}
+			.span15{
+				font-size: 16px;
+				font-family: "微软雅黑";
+				  color: orangered;
+				  font-weight: bold;
+			}
+			.span16{
+				   font-size: 12px;
+				   font-family: "微软雅黑";
+			       height: 100px;
+				   font-weight: 700;
+				   float: left;
+				   margin-top: 20px;
+				   margin-left: 20px;
+			}
+			.span17{
+				   font-size: 12px;
+				   font-family: "微软雅黑";
+				   color: #666666;
+			}
+			.span18{
+				   font-size: 12px;
+				   font-family: "微软雅黑";
+				   color: #B3A5B9;
+			}
+			a{
+				text-decoration: none;
+			}
+			.a1 {
+				font-family: "微软雅黑";
+				font-size: 12px;
+				color:#666666;
+			}
+			.a2 {
+				border: 1px solid grey;
+				margin: 4px;
+				padding:9px;
+				font-family: "微软雅黑";
+				font-size:12px;
+			/*	color:#2F2F2F;*/
+				text-decoration: none;
+			}
+			.a2:visited{
+				 border:2px solid #FF0008;
+				 text-decoration: none;
+				 color:#2F2F2F;
+				 
+			}
+			.a2:hover{
+				 border:2px solid #FF0008;
+				 text-decoration: none;
+				 
+			}
+			#a3{
+				margin: 0;
+				font-family: "微软雅黑";
+				font-size: 12px;
+				font-weight: bold;
+				line-height: 48px;
+				cursor: auto; 	
+				color:#363636;
+				padding-left:15px;
+			}
+			#a4{
+			    font-family: "微软雅黑";
+                font-size: 14px;
+                line-height: 48px;	
+                color: #979797;
+                width:55px;
+                height:15px;
+                
+			}
+			.a5{
+				 font-family: "微软雅黑";
+			    font-size: 12px;
+			    color:#666666;
+			    
+			}
+			.a6{
+				font-size: 12px;
+			    color:#666666;
+			    text-decoration: none;
+			}
+			
+			.btn {
+				height:40px;
+				width: 180px;
+				border: 1px solid #FF0036;
+				font-family: "microsoft yahei";
+				color: #FF0036;
+				font-size:16px;
+				background-color: #ffeded;
+				outline-color:orangered;
+				
+			}
+			.btnadd {
+				height:42px;
+				width: 180px;
+				border: 2px solid #FF0008;
+				background: url(../img1/btnadd.png);
+				outline-color:orangered;
+			
+			}
+			.btn1{
+				width: 72px;
+				height: 27px;
+				margin: 5px -17px 0 20px;
+				color: #FFFFFF;
+				background-color: #363636;
+				outline-color:gray;
+			}
+			.btn2{
+				width: 72px;
+				height: 27px;
+				margin: 5px -17px 0 20px;
+				color: #363636;
+				background-color: #F6F6F6;
+				outline-color:gray;
+			}
+			
+			.ul1{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+		        margin-left:50px;
+		        margin-top:22px;
+		        height: 100px;
+		        width: 385px;
+			}
+			.li1{
+				margin: 0;
+				padding:5px 5px;
+				list-style: none;
+			    float: left;
+			}
+			.ul2{
+				margin: 100px auto;
+				padding: 0;
+		        margin-left: 20px;
+		        height: 80px;
+			}
+			.ul3{
+				margin:2px 2px 2px 0;
+				padding:0;
+				width: 270px;
+				height: 25px;
+			
+			}
+			.ul4{
+				margin: 2px 2px 2px 0;
+				width: 270px;
+				height: 145px;
+			
+			}
+			.ul4one{
+				margin: 2px 2px 2px 0;
+				width: 270px;
+				height: 250px;
+			
+			}
+		.li2{
+				height:20px;
+				margin:10px 20px 10px 20px;
+				padding:5px 5px;
+			    float: left;
+			    font-family: "微软雅黑";
+			    font-size: 12px;
+			    color: darkgray;
+			}
+			.li3{
+				height:20px;
+				margin:5px 15px 0px -10px;
+				list-style: none;
+				padding:5px 5px;
+			    float: left;
+			    font-family: "微软雅黑";
+			    font-size: 10px;
+			    color:#989898;
+			}
+			.li4{
+				height:20px;
+				margin:-5px 17px 0px -10px;
+				list-style: none;
+				padding:5px 5px;
+			    float: left;
+			    font-family: "微软雅黑";
+			    font-size: 10px;
+			    color:#FF0008;
+			    font-weight: bold;
+			    
+			}
+			.li5{
+				height:20px;
+				margin:5px 30px 0px 5px;
+				list-style: none;
+				padding:5px 5px;
+			    float: left;
+			    font-family: "微软雅黑";
+			    font-size: 16px;
+			    color: limegreen;
+			}
+			.li6{
+				list-style: none;
+				font-family: "微软雅黑";
+				font-size:12px;
+				color:#989898;
+				font-weight: bold;
+				margin-left:-12px;
+				height:16px ;
+				line-height: 16px;
+			}
+			.li7{
+				height:20px;
+				width: 180px;
+				margin:5px 5px 0px 20px;
+				list-style: none;
+				padding:5px 5px;
+			    float: left;
+			    font-family: "微软雅黑";
+			    font-size: 12px;
+			    color:#666666;
+			    text-overflow: ellipsis;
+			    overflow: hidden;
+			    white-space: nowrap;
+			}
+			.li8{	
+				list-style: none;
+				margin: 2px 0px 2px 8px;
+			    float: left;
+			 			   
+			}
+			.li9{	
+				margin: 2px 0 2px 2px;
+				
+			    	   
+			}
+		#img1{
+			width: 150px;
+			height: 120px;
+			border: 1px solid #ededed;
+			margin: 10px 10px 10px 10px;
+			float: left;
+		}
+			
+	     .img2{
+	     	margin: 10px 10px 10px 20px;
+	     }
+		.img3{
+			width:65px;
+			height: 65px;
+			cursor: pointer;
+			
+			
+		}
+		/*.img3:hover{
+			border:1px solid black;
+		}*/
+		.img4{
+			vertical-align: middle;
+		}
+		
+		#add{
+		     font-size: 1px;
+		     color: gray;
+		     border:1px solid #EDEDED ;
+		   	 cursor: pointer;
+		   	
+		   	
+		    }
+		     #drease{
+		     color: gray;
+		     font-size: 1px;
+		     border:1px solid #EDEDED ;
+		     cursor: pointer;
+	      	
+		     }
+            #input1{
+            	width: 120px;
+            	height: auto;
+            	color:#808080;
+            	font-size:14px;
+            }
+             .input2{
+            	width: 40px;
+            	height: auto;
+            	color:#808080;
+            	margin: 0 5px 0 0;
+            }
+            #input3{
+                
+            }
+            .td1{
+            	height: auto;
+            	padding: 16px 7px;
+            	border-bottom: 1px solid #e3e3e3;
+            }
+            
+            #Box{
+            margin-left:26px ;	
+			height:420px; 
+			width:420px;
+			position: relative;
+			border:1px solid lightgrey;
+			cursor: pointer;
+			}
+			#bigBox{
+			height:420px; 
+			width:420px;
+			position: absolute;
+			top:320px;
+			left:510px;
+			overflow: hidden;
+			display:none;
+			border: 1px solid lightgrey;
+		}
+		#Box img{
+			height:420px; 
+			width:420px;
+		
+			}
+		#lay{
+			background:#fff;
+			border:1px solid gray;
+			position: absolute;
+			top:0;
+			left: 0;
+			opacity:0.5;
+			display:none;
+			filter:alpha(opacity=50);
+		}
+		.swiper-container {
+                 width: 141px;
+                height:570px;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        margin-left: 0 ;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    
+		</style>
+		<style type="text/css">
+                       .pmenu .sonmenu
+		                  {display: none;}
+		                .pmenu:hover{
+                       		background-color: ghostwhite;
+                       	} 
+                       	.pmenu:hover .sonmenu{
+                       		display: block;
+                       	}
+                       </style>
+		<script type="text/javascript">
+			window.onload = function(){
+				var Box = document.getElementById("Box");
+				var bigBox = document.getElementById("bigBox");
+				var bigbox = bigBox.children[0];
+				var lay = document.getElementById("lay");
+				//鼠标移入时，将放大镜和bigBox显示出来
+				Box.onmouseover = function(){
+					lay.style.display = "block";
+					bigBox.style.display = "block";
+				}
+				//鼠标移出时，将放大镜和bigBox隐藏起来
+				Box.onmouseout = function(){
+					lay.style.display = "none";
+					bigBox.style.display = "none";
+				}
+				Box.onmousemove = function(e){
+					e = e || event;//事件源的兼容问题
+					var scale = 2;//图片的放缩比例
+					//将鼠标放到放大镜的中间
+					var x = e.clientX - lay.offsetWidth/2;
+					var y = e.clientY - lay.offsetHeight/2;
+					//将放大镜的宽高与盒子的宽高结合起来按比例放缩
+					lay.style.width = parseInt(Box.offsetWidth / scale )+ "px";
+					lay.style.height = parseInt(Box.offsetHeight / scale)+ "px";
+					//设置大盒子的宽高
+					bigbox.style.width = Box.offsetWidth * scale + "px";
+					bigbox.style.height = Box.offsetHeight * scale + "px";
+					if(x < 0){
+						x = 0;//左边界的判断，当超出时将x置为0;
+					}
+					//右边界的判断，当超出时将x置为Box的宽度减去放大镜的宽度;
+					if( x >= Box.offsetWidth - lay.offsetWidth){
+						x = Box.offsetWidth - lay.offsetWidth;
+					}
+					//下边界的判断，当超出时将y置为Box的高度减去放大镜的高度;
+					if( y >= Box.offsetHeight - lay.offsetHeight){
+						y = Box.offsetHeight - lay.offsetHeight;
+					}
+					if(y < 0){
+						y = 0;//上边界的判断，当超出时将y置为0;
+					}
+					lay.style.left = x + "px";
+					lay.style.top = y + "px";
+					//同比例放缩，大的盒子图片的放缩比例，当小盒子向右移动的时候，大盒子向左移动同等的比例的宽高，方向是相反的
+					 var left = lay.offsetLeft * scale;
+					 var top  = lay.offsetTop * scale ;
+					bigbox.style.marginLeft =(left * (-1)) + "px";
+					bigbox.style.marginTop =(top * (-1))+ "px";
+ 
+					
+				}
+				
+			}
+			
+		</script>
+	</head>
+
+	<body>
+		<div style="width: 1348px;height: auto;float: left;margin-top: 0;">
+            <div id="header">
+				<div>
+					<span><img src="../img/sprite/home.gif"/><a href="../index.html">天猫首页</a></span>
+					<span>欢迎来天猫</span>
+					<span><a href="login.html">请登录</a></span>
+					<span><a href="join.html">免费注册</a></span>
+				</div>
+				<div id="menu-bar">
+					<div id="mytaobao"class="menu-item bg-change">
+						<div id=""style="cursor: pointer;">我的淘宝</div>
+						<div id=""class="sub-menu"style="height:60px;width:100px;top: 29px;left: -1px;">
+							<div style="width: 100%;height: 50%;text-align: center;padding-top: 8px;"><a href=""style="color:grey;">已买到的宝贝</a></div>
+							<div style="width: 100%;height: 50%;text-align: center;padding-top: 5px;"><a href=""style="color:grey;">已卖出的宝贝</a></div>
+						</div>
+					</div>
+					<div id=""class="menu-item">
+						<img src="../img/sprite/cart.gif"style="float: left;"/>
+						<div id="cart-btn"onclick="window.open('shopping_cart.html')"style="float: left;cursor: pointer;">购物车2件</div>
+						
+					</div>
+					
+					<div id="favourite"class="menu-item bg-change">
+						<div style="cursor: pointer;">收藏夹</div>
+						<div id=""class="sub-menu"style="height:60px;width:90px;top: 29px;left: -1px;">
+							<div style="width: 100%;height: 50%;text-align: center;padding-top: 8px;"><a href=""style="color:grey;">收藏的宝贝</a></div>
+							<div style="width: 100%;height: 50%;text-align: center;padding-top: 5px;"><a href=""style="color:grey;">收藏的店铺</a></div>
+						</div>
+					</div>
+					<div id=""class="menu-item">
+						<img src="../img/sprite/phone.gif"style="float: left;"/>
+						<div id=""style="float: left;cursor: pointer;">手机版</div>
+						
+							<img class="sub-menu" src="../img/tmerweima.png" width="170px"style="top: 30px;left: -1px;" />
+						
+					</div>
+					<div id=""class="menu-item"style="cursor: pointer;">
+						淘宝网
+					</div>
+					<div id="support"class="menu-item bg-change"style="cursor: pointer;">
+						<div>商家支持</div>
+						<div id=""class="sub-menu"style="height:177px;width:142px;top: 29px;right: -1px;padding-top: 8px;">
+							
+							<div style="float: left;width: 100%;padding-left: 11px;color: grey;"><b>商家:</b></div>
+							<div style="float: left;width: 100%;height:90px;margin-top: 3px;">
+								<a href=""style="float: left;height: 20px;width: 70px;display: block;text-align: center;color:grey;">商家中心</a>
+								<a href=""style="float: left;height: 20px;width: 70px;display: block;text-align: center;color:grey;">天猫规则</a>
+								<a href=""style="float: left;height: 20px;width: 70px;display: block;text-align: center;color:grey;">商家入驻</a>
+								<a href=""style="float: left;height: 20px;width: 70px;display: block;text-align: center;color:grey;">运营服务</a>
+								<a href=""style="float: left;height: 20px;width: 70px;display: block;text-align: center;color:grey;">商家品控</a>
+								<a href=""style="float: left;height: 20px;width: 70px;display: block;text-align: center;color:grey;">商家工具</a>
+								<a href=""style="float: left;height: 20px;width: 70px;display: block;text-align: center;color:grey;">天猫智库</a>
+								<a href=""style="float: left;height: 20px;width: 70px;display: block;text-align: center;color:grey;">喵言喵语</a>
+							</div>
+							<div style="float: left;width: 100%;padding-left: 11px;color: grey;"><b>帮助:</b></div>
+							<div style="float: left;width: 100%;margin-top: 3px;">
+								<a href=""style="float: left;height: 20px;width: 70px;display: block;text-align: center;color:grey;">帮助中心</a>
+								<a href=""style="float: left;height: 20px;width: 70px;display: block;text-align: center;color:grey;">问商友</a>
+							</div>
+							
+						</div>
+						
+					</div>
+					<div id=""class="menu-item bg-change">
+						
+						<div style="cursor: pointer;" >网址导航</div>
+						<div id=""class="sub-menu"style="height:160px;width:1190px;top: 25px;right: -1px;padding-top: 20px;padding-left: 20px;">
+							<style type="text/css">
+							    #hot th{
+									font-size: 16px;
+									font-family: "微软雅黑";
+									color: orange;
+								}
+								#hot td{
+									width: 90px;
+								}
+								#hot td a{
+									color: grey;
+								}
+							</style>
+							<table id="hot"height="120px"width="450px" border="0" cellspacing="" cellpadding=""style="float: left;border-right: 1px solid #E6E6E6;margin-left: 30px;">
+								<tr ><th colspan="5">热点推荐Hot</th></tr>
+								<tr>
+									<td><a href="">天猫超市</a></td>
+									<td><a href="">喵鲜生</a></td>
+									<td><a href="">科技新品</a></td>
+									<td><a href="">女装新品</a></td>
+									<td><a href="">酷玩街</a></td>
+								</tr>
+								<tr>
+									<td><a href="">内衣新品</a></td>
+									<td><a href="">试美妆</a></td>
+									<td><a href="">运动新品</a></td>
+									<td><a href="">时尚先生</a></td>
+									<td><a href="">精明妈咪</a></td>
+								</tr>
+								<tr>
+									<td><a href="">吃乐会</a></td>
+									<td><a href="">企业采购</a></td>
+									<td><a href="">会员积分</a></td>
+									<td><a href="">天猫国际</a></td>
+									<td><a href="">品质频道</a></td>
+								</tr>
+								
+							</table>
+							<style type="text/css">
+							    #market th{
+									font-size: 16px;
+									font-family: "微软雅黑";
+									color:blue;
+								}
+								#market td{
+									width: 80px;
+								}
+								#market td a{
+									color: grey;
+								}
+							</style>
+							<table id="market"height="120px"width="400px" border="0" cellspacing="" cellpadding=""style="float: left;margin-left: 40px;border-right: 1px solid #E6E6E6;S">
+								<tr ><th colspan="5">行业市场Market</th></tr>
+								<tr>
+									<td><a href="">美妆</a></td>
+									<td><a href="">电器</a></td>
+									<td><a href="">女装</a></td>
+									<td><a href="">男装</a></td>
+									<td><a href="">女鞋</a></td>
+								</tr>
+								<tr>
+									<td><a href="">男鞋</a></td>
+									<td><a href="">内衣</a></td>
+									<td><a href="">箱包</a></td>
+									<td><a href="">运动</a></td>
+									<td><a href="">女婴</a></td>
+								</tr>
+								<tr>
+									<td><a href="">家族</a></td>
+									<td><a href="">医药</a></td>
+									<td><a href="">食品</a></td>
+									<td><a href="">配饰</a></td>
+									<td><a href="">汽车</a></td>
+								</tr>
+								
+							</table>
+							<style type="text/css">
+							    #help th{
+									font-size: 16px;
+									font-family: "微软雅黑";
+									color: #5A5A5A;
+								}
+								#help td{
+									width: 80px;
+								}
+								#help td a{
+									color: grey;
+								}
+							</style>
+							<table id="help"height="120px"width="200px" border="0" cellspacing="" cellpadding=""style="float: left;margin-left: 40px;">
+								<tr ><th colspan="5">服务指南Help</th></tr>
+								<tr>
+									<td><a href="">帮助中心</a></td>
+									<td><a href="">品质保证</a></td>
+									
+								</tr>
+								<tr>
+									<td><a href="">特色服务</a></td>
+									<td><a href="">7天退换货</a></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+								</tr>
+								
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="tianmao">
+					<img src="../img/TMALL_logo.png"style="margin-left: 0px;margin-top: 23px;height: 20px;width: 140px;float: left;cursor: pointer;"onclick="window.location.href='../index.html'"/>
+					
+					<div style="height: 38px;width: 20px;margin-top: 16px;float:left;border-right: 1px solid #EEEEEE;"></div>
+					<div id="store"></div>
+					<div style="height: 38px;width: 2px;margin-top: 16px;float:left;border-left: 1px solid #EEEEEE;"></div>
+					<div id="service"></div>
+					<div style="height: 38px;width: 2px;margin-top: 16px;float:left;border-left: 1px solid #EEEEEE;"></div>
+					<div id="erweima"></div>
+					<div id="rig" style="height:100%;width:570px;float: right;padding-top: 15px;">
+						
+						<form action="" method="post" style="margin-left: 20px;">
+							<input type="text" name="" id="" value="" placeholder=" 搜索 商品/品牌/店铺" style="outline:none;height:35px;width: 400px;float: left;border:3px solid #FF3333;font-size: 8px;padding-left: 10px;"/>
+							<input type="button" value="搜天猫" style="height:35px;width: 70px;float: left;background-color: #FF3333;border:3px solid #FF3333;color: white;font-family: '微软雅黑';"/>
+							<input type="submit" value="搜本店" style="height:35px;width: 70px;float: left;background-color:#333333;border:3px solid #333333;color: white;font-family: '微软雅黑';margin-left: 2px;"/>
+						</form>
+						<div style="float: left;">
+							<ul style="padding-left: 0px;">
+								<li style="margin-left: 15px;"><a href="">羊毛被</a></li>
+								<li><a href="">提花四件套</a></li>
+								<li><a href="">全棉套被</a></li>
+								<li><a href="">保护垫</a></li>
+								<li><a href="">冰丝凉席</a></li>
+								<li><a href="">婚庆床品</a></li>
+								<li style="border-right: none;"><a href="">空调被</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div id="fuanna">
+					<div class="inner1">
+						<img src="../img/fan.png" style="float: left;margin-top: 7px;" width="50px" height="60px"/>
+				         <div style="margin-top: 7px;margin-left:10px;float: left;width: 85px;height:60px;">
+				         	<div style="width: 100%;height: 50%;float: left;font-size: 26px;color: whitesmoke;">富安娜</div>
+				         	<div style="width: 100%;height: 50%;float: left;font-size: 22px;color: whitesmoke;">FUANNA</div>
+				         </div>
+						<!--<p class="text-white" style="float: left; font-size:28px;margin-left: 10px;margin-top:3px;height: 10px;font-family:arial;color: white;">富安娜</p>
+						<p class="text-white" style="float: left;font-size:28px;margin-left: 10px;margin-top:10px;height: 10px;font-family:roman;color: white;">FUANNA</p>-->
+					</div>
+					<div style="height: 46px;width: 20px;margin-top: 37px;border-right: 1px solid #737373;float: left;"></div>
+					<div class="inner1">
+						
+						<p style="height:8px;font-size: 13px; margin-left: 8px;margin-top: 11px;float: left;"class="text-white">上市股票代码:002327</p>
+						<p style="height:10px;font-size: 16px;margin-left: 8px;float: left;color: white;font-family: '微软雅黑';">专注艺术家纺23年</p>
+						<p style="height:10px;font-size: 8px;margin-left: 8px;margin-top: 2px;float: left;"class="text-white">线下2000余家实体店/柜</p>
+					
+					</div>
+					<div class="care"></div>
+					
+					<div id="fanr">
+						<img src="../img/juhuasuan.png" alt="" style="float: right;width:120px; margin-top: 20px; margin-right: 15px;"/>
+						<!--<div >
+							
+							<p style="margin: 0;font-size: large;color: #F5E79E;">夏凉新品</p>
+							<p style="margin: -25px;font-size: small;color: #F5E79E;">new product</p>
+						</div>-->
+						<form action="" method="post">
+							<input type="search" name="" id="" value="" style="background: url(../img/sprite/fdj.png);background-repeat:no-repeat;padding-left: 35px;"/>
+					    	<!--<input type="submit" name="" id="" value="查找" />-->
+						</form>
+					
+					</div>
+					
+					<img src="../img/top_bed2.png"style="width:150px;float: right;margin-left: 10px;margin-right: 100px;margin-top: 12px;"/>
+					<img src="../img/top_bed.png"style="width:150px;float: right;margin-left: 10px;margin-right: 10px;margin-top: 12px;"/>
+				</div>
+				<div id="down" >
+					<p style="margin: 0;">
+						<a class="a-left font-yh" style="width:100px;color: #DEB887;"><b>所有宝贝☰▼</b></a>
+						<a class="a-left text-white" href="" style="width: 80px;float: left;margin-left: 27px;"><b>首页Home</b></a>
+						<a class="a-left text-white" href=""><b>四件套</b></a>
+						<a class="a-left text-white" href=""><b>被芯馆</b></a>
+						<a class="a-left text-white" href=""><b>枕芯馆</b></a>
+						<a class="a-left text-white" href=""><b>婚庆馆</b></a>
+						<a class="a-left text-white" href=""><b>卡通馆</b></a>
+						<a class="a-left text-white" href=""><b>磨毛馆</b></a>
+						<a class="a-left text-white" href=""><b>轻奢素提</b></a>
+						<a class="a-left text-white" href=""><b>床垫馆</b></a>
+						<a class="a-left text-white" href=""><b>家居馆</b></a>
+						<a class="a-left text-white" href=""><b>家具馆</b></a>
+						<a class="a-left text-white" href=""><b>夏被馆</b></a>
+						<a class="a-left text-white" href=""><b>蚊帐馆</b></a>
+					</p>
+				</div>
+				<div id="nav">
+					
+					<div id="left1">
+						<p class="text-yellow"><b>热卖活动：</b></p>
+					</div>
+					<div id="right1">
+						<ul style="padding-left: 0px;">
+							<li><a class="text-yellow" href="#"><b>套件会场</b></a></li>
+							<li><a class="text-yellow" href="#"><b>被芯会场</b></a></li>
+							<li><a class="text-yellow" href="#"><b>婚庆会场</b></a></li>
+							<li><a class="text-yellow" href="#"><b>枕芯会场</b></a></li>
+							<li><a class="text-yellow" href="#"><b>家具会场</b></a></li>
+							<li><a class="text-yellow" href="#"><b>夏季清凉卧室</b></a></li>
+						</ul>
+					</div>
+				</div>
+		</div>
+		<div id="page"style="width: 100%;height: auto;float: left;margin-top: 0;">
+		<div id="div3">
+			<div id="div1">
+		<div id="Box">
+			<img  src="../img1/p1.jpg" id="pic" />
+			<span id="lay"></span>
+		</div>
+		<div id="bigBox">
+			<img  src="../img1/p1.jpg" id="Pic"/>
+		</div>
+         
+				<ul class="ul1">
+					<li class="li1"><img src="../img1/p1.jpg" class="img3" id="t1"/></li>
+					<li class="li1"><img src="../img1/p2.jpg" class="img3" id="t2"/></li>
+					<li class="li1"><img src="../img1/p3.jpg" class="img3" id="t3"/></li>
+					<li class="li1"><img src="../img1/p4.jpg" class="img3" id="t4"/></li>
+					<li class="li1"><img src="../img1/p5.jpg"/ class="img3" id="t5"></li>
+				</ul>
+				
+				<div style="margin-left: 60px; width:365px">
+					<span class="span1"><img src="../img1/share.png"/></span>
+					<span class="span1">分享</span>&nbsp;&nbsp;
+					<span class="span1"><img src="../img1/collect.png"/></span>
+					<span class="span1">收藏商品(923人气)</span>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					<span class="span1">举报</span>	
+				</div>	
+			</div>
+			<script src="../js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+			<script>
+				var T1 = document.getElementById("t1");
+					var Picc= document.getElementById("Pic");
+					var picc= document.getElementById("pic");
+					var T2 = document.getElementById("t2");
+					var T3 = document.getElementById("t3");
+	                var T4 = document.getElementById("t4");
+	                 var T5 = document.getElementById("t5");			
+					
+					T1.onmouseover=function(){
+						picc.src="../img1/p1.jpg";
+						Picc.src="../img1/p1.jpg";
+						T1.setAttribute("style","border: 2px solid gray;");
+						T2.setAttribute("style","border: 0");
+						T3.setAttribute("style","border: 0");
+						T4.setAttribute("style","border: 0");
+						T5.setAttribute("style","border: 0");
+					}
+						T2.onmouseover=function(){
+						picc.src="../img1/p2.jpg";
+						Picc.src="../img1/p2.jpg";
+						T2.setAttribute("style","border: 2px solid gray;");
+						T1.setAttribute("style","border: 0");
+						T3.setAttribute("style","border: 0");
+						T4.setAttribute("style","border: 0");
+						T5.setAttribute("style","border: 0");
+					}
+						T3.onmouseover=function(){
+						picc.src="../img1/p3.jpg";
+						Picc.src="../img1/p3.jpg";
+						T3.setAttribute("style","border: 2px solid gray;");
+						T2.setAttribute("style","border: 0");
+						T1.setAttribute("style","border: 0");
+						T4.setAttribute("style","border: 0");
+						T5.setAttribute("style","border: 0");
+					}
+						T4.onmouseover=function(){
+						picc.src="../img1/p4.jpg";
+						Picc.src="../img1/p4.jpg";
+						T4.setAttribute("style","border: 2px solid gray;");
+						T2.setAttribute("style","border: 0");
+						T1.setAttribute("style","border: 0");
+						T3.setAttribute("style","border: 0");
+						T5.setAttribute("style","border: 0");
+					}
+						T5.onmouseover=function(){
+						picc.src="../img1/p5.jpg";
+						Picc.src="../img1/p5.jpg";
+						T5.setAttribute("style","border: 2px solid gray;");
+						T2.setAttribute("style","border: 0");
+						T1.setAttribute("style","border: 0");
+						T3.setAttribute("style","border: 0");
+						T4.setAttribute("style","border: 0");
+					}
+			</script>
+			
+			
+			<div id="div2">
+				
+				<div id="p1">瀚麟淘宝，好货到村</div>
+				<div id="p2">【天猫直送】富安娜家纺馨而乐纯棉4件套 全棉秋冬套件床单被套</div>
+				<div id="p3">阳光纯棉 亲肤透气 柔软细腻</div>
+				<img src="../img1/gwq.jpg"  />	
+				<div class="div5">
+					<span class="span1">运费</span> &nbsp;&nbsp;
+					<span id="span3">天津 至 哈尔滨 南岗区 快递 0.00</span>
+				</div>
+				<div class="div5one"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<img src="../img/xqy2_03.png" />
+					<span id="span2">天猫直送</span>
+					<span id="span4">天猫保障的配送服务</span>
+				</div>
+				<hr style="height:1px;border:none;border-top:1px dotted #C9C9C9;width:505px;margin:5px auto 5px auto" />
+				<div class="div5one">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<span class="span1">月销量</span>
+					<span class="span6">0</span> 
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<span class="span1">|</span>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<span class="span1">累计评价</span>
+					<span class="span6">125</span> 
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<span class="span1">|</span>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<span class="span1">送天猫积分</span>
+					<span id="span7">249</span>
+				</div>
+				<hr style="height:1px;border:none;border-top:1px dotted #C9C9C9;width:505px;margin:5px auto 5px auto" />
+				<div class="div5">
+					<span class="span1">颜色分类</span> &nbsp;&nbsp;
+					<img src="../img1/azbld.png" align="absmiddle"/>			
+				</div>
+				<div class="div5">
+		<span class="span1">适用床尺寸</span>
+		<a  id="nochange1"href="javascript:void(0)" class="a2"style="border:1px solid grey ;color: gray;text-decoration: none;">1.5m(5英尺) 床 </a>
+		<a  id="nochange2"href="javascript:void(0)" class="a2"style="border:1px solid grey ;color: gray;text-decoration: none;">1.8m(5英尺) 床 </a>
+				</div>
+				<div class="" style="height: 30px;" >
+					<div id=""style="position:relative;  float: left;top: 28px;color: gray;
+				font-size: 12px;">
+						数量
+				</div>
+					<div id=""style="float: left; position: relative; top: 20px;left: 42px;">
+						<input type="text " id="num" size="1"  value="1 " style="width: 42px; height: 31px;"/>
+					</div>
+					<div id=""style="position: relative; float: left;top: 20px;left: 45px;">
+						<div id="add" style="width: 18px;height:15px;border:1px solid #B6B5BB; text-align: center;">∧</div><div style="height:2px;"></div>
+							<div id="drease"style="width: 18px;height:15px;border:1px solid #B6B5BB; text-align: center;">∨</div>
+					</div>
+					<div id=""style="float: left;position: relative; top: 26px;left: 55px;color: gray;
+				font-size: 12px;">
+				       件
+					</div>
+					<div id="" style="float: left;position: relative; top:26px;left: 75px;	color: gray;
+				font-size: 12px;">
+						库存17件
+					</div>
+				</div>
+				<div class="div5two">
+	<input class="btn" type="button"  value="立即购买 " />
+	<input class="btnadd" type="button" value="&nbsp" onclick="window.location.href='shopping_cart.html'" />
+				</div>
+				<div class="div5 ">
+		<span class="span1">服务承诺</span>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="a1">极速退款</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="# " class="a1 ">材质保真险</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="a1">赠运费险</a>  &nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="# " class="a1 pmenu"style="position: relative;">
+			<span >支付方式▼</span>
+			<div class="sonmenu" style="width:150px;height:75px;background-color:white;border:1px solid #E7E1CD;position: absolute;top: 0px;right: 0;padding-left: 15px;">
+				<span style="float: right;padding-right:3px;color: gray;">支付方式▲</span>
+				<br /><br />	
+				<span id=""style="float: left;width: 50%;color: gray;">
+					信用卡
+				</span>
+				<span id=""style="float: left;width: 50%;color: gray;">
+					快捷支付
+				</span>
+				<span id=""style="float: left;width: 50%;color: gray;">
+					蚂蚁花呗
+				</span>
+				<span id=""style="float: left;width: 50%;color: gray;">
+					余额宝
+				</span>
+			</div>
+		</a>
+		<br />
+		
+		<div style="margin-left: 66px;"><a href="# " class="a1">七天无理由退换</a></div> 
+	</div>
+			</div>
+			
+<script src="../js/jquery-3.3.1.min.js "></script>
+<script type="text/javascript ">
+    var no1=document.getElementById("nochange1");
+    var no2=document.getElementById("nochange2");
+	var abs=document.getElementsByClassName("a2");
+	var i=0,j=0;
+	
+	abs[0].onclick = function(){
+		
+		if(i==0&&j==0){
+			/*abs[0].setAttribute("style","border:2px solid #FF0008;");*/
+			abs[0].style.borderImage="url(../img/border-right.png)";
+			abs[0].style.borderImageSlice="7";
+			abs[0].style.borderImageWidth="6px";
+			/*abs[0].setAttribute("style","border-image: url(../img/border-right.png);");
+			abs[0].setAttribute("style","border-image-width: 15px;");
+			abs[0].setAttribute("style","border-image-slice: 15;");*/
+			
+			i=1;
+			
+		}else if(i==1&&j==0){
+			abs[0].setAttribute("style","border:1px solid gray;");
+			
+			i=0;
+		}else if(i==0&&j==1){
+			abs[1].setAttribute("style","border:1px solid gray;");
+			/*abs[0].setAttribute("style","border:2px solid #FF0008;");*/
+			abs[0].style.borderImage="url(../img/border-right.png)";
+			abs[0].style.borderImageSlice="7";
+			abs[0].style.borderImageWidth="6px";
+			i=1;
+			j=0;
+		}
+		no1.style.textDecoration="none";
+	    no2.style.textDecoration="none";
+	    no1.style.color="gray";
+	    no2.style.color="gray";
+	    
+	}
+	
+	abs[1].onclick = function(){
+		if(j==0&&i==0){
+			/*abs[1].setAttribute("style","border:2px solid #FF0008;");*/
+			abs[1].style.borderImage="url(../img/border-right.png)";
+			abs[1].style.borderImageSlice="7";
+			abs[1].style.borderImageWidth="6px";
+			
+			j=1;
+		}else if(j==1&&i==0){
+			abs[1].setAttribute("style","border:1px solid gray;");
+		
+			j=0;
+		}else if(j==0&&i==1){
+			abs[1].style.borderImage="url(../img/border-right.png)";
+			abs[1].style.borderImageSlice="7";
+			abs[1].style.borderImageWidth="6px";
+			/*abs[1].setAttribute("style","border:2px solid #FF0008;");*/
+			abs[0].setAttribute("style","border:1px solid gray;");
+			j=1;
+			i=0;
+		
+	
+			
+		}
+		no1.style.textDecoration="none";
+		no1.style.color="gray";
+	    no2.style.textDecoration="none";
+	    no2.style.color="gray";
+	}
+</script>
+	
+			<script type="text/javascript">
+				var Add=document.getElementById("add");	
+				var Drease=document.getElementById("drease");
+					var Num=document.getElementById("num");
+					Add.onclick=function(){
+						var t;
+						t=parseInt(Num.value)+1;
+						if(t<=17){
+						Num.value=t;
+						}
+						else{
+							alert("库存不足");
+						}
+					}
+					Drease.onclick=function(){
+						var p;
+						p=parseInt(Num.value)-1;
+						if(p>=0){
+						Num.value=p;
+						}
+						else{
+							Num.value=0;
+						}
+					}
+			</script>	
+		
+
+			<div id="div4">
+				<p id="p4">———&nbsp;&nbsp;看了又看&nbsp;&nbsp;———</p>
+				<div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="../img1/sadall01.png"></div>
+            <div class="swiper-slide"><img src="../img1/sadall02.png"></div>
+            <div class="swiper-slide"><img src="../img1/sadall03.png"></div>
+            <div class="swiper-slide"><img src="../img1/sadall04.png"></div>
+            <div class="swiper-slide"><img src="../img1/sadall05.png"></div>
+            <div class="swiper-slide"><img src="../img1/sadall04.png"></div>
+    
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+			</div>
+            </div>
+            <script src="../dist/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        direction: 'vertical'
+    });
+    </script>
+
+                        <div id="div6">
+	             	     
+	                    <div id="div7">
+	                    	
+                         <div class="div10">
+                         &nbsp;
+                      	<a id="a3">富安娜官方旗舰店 </a> 
+                      	<img src="../img1/robit.gif" />
+                         </div>
+	                   
+	                    <div id="div14">
+	                    <ul style="margin-top: 10px;">
+	                    <li class="li6" ><img src="../img/xqy2_03.png" />天猫10年店</li>
+	                    <li class="li3">描述</li>
+	                    <li class="li3">服务</li>
+	                    <li class="li3">物流</li>
+	                    	</ul>
+	                    	<br />
+	                    	<ul>
+	                    <li class="li4">4.8↑</li>
+	                    <li class="li4">4.8↑</li>
+	                    <li class="li4">4.8↑</li>
+	                    	 </ul> 
+	                    	 <br />
+	                     <input type="button"  class="btn1" value="进店逛逛" style="outline: none;border: 1px solid lightgrey;font-size: 8px;"/>
+	                     <input type="button"  class="btn2" value="收藏店铺" style="outline: none;border: 1px solid lightgrey;font-size: 8px;"/>
+	                    	
+	                    </div>
+	                    <div id="div18">
+	                    	<p id="p7">售前导购：</p>
+	                    	<span class="span10">巴黎：</span><img src="../img1/robit.gif" />
+	                    	<span class="span10">舞曲：</span><img src="../img1/robit.gif" />
+	                    	<p class="p8">售后导购：</p>
+	                    	<span class="span10">悠风：</span><img src="../img1/robit.gif" />
+	                    	<span class="span10">塞纳：</span><img src="../img1/robit.gif" />
+	                    	<span class="span10">紫云：</span><img src="../img1/robit.gif" />
+	                    	<p class="p8">物流查询：</p>
+	                    	<span class="span10">好晗：</span><img src="../img1/robit.gif" />
+	                    	<p class="p8">团购查询：</p>
+	                    	<span class="span10">天香：</span><img src="../img1/robit.gif" />
+	                    </div>
+	                    <div id="div19">
+	                           <br />                
+	                    	&nbsp;&nbsp;<span class="span1"style="font-family: '微软雅黑'">关键字</span>&nbsp;<input id="input1" type="text" value="四件套" style="height: 20px;font-size: 8px;border-radius: 2px;outline: none;border: 1px solid darkgrey;"/><br /><br />
+	                    	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="span1"style="font-family: '微软雅黑'">价格</span>&nbsp;<input class="input2" type="text" value="￥" style="width:50px;height: 20px;font-size: 8px;border-radius: 2px;outline: none;border: 1px solid darkgrey"/><span class="span1">-</span>
+	                    	<input type="text" class="input2" value="￥" style="width:55px;height: 20px;font-size: 8px;border-radius: 2px;outline: none;border: 1px solid darkgrey"/><br /><br />
+	                    	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ensp;&nbsp;&nbsp;&nbsp;&nbsp;
+	                    	<img src="../img1/findbtn.png" style="border-radius: 2px;margin-bottom: 10px;"/><br />
+	                    	&nbsp;&nbsp;&nbsp;<span class="span1"><a href=""style="color: darkgray;font-family: '微软雅黑'">婚庆套件</a></span>&nbsp;<span class="span1"><a href=""style="color: darkgray;font-family: '微软雅黑'">冬被</a></span>
+	                    	&nbsp;<span class="span1"><a href=""style="color: darkgray;font-family: '微软雅黑';">枕芯</a></span>	  	                    	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+	                    	</div>  
+	                    	<div class="div30">
+	                    		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	                    		&nbsp;&nbsp;&nbsp;&nbsp;
+	                    		<img src="../img1/adbtn.png" id="i1" />
+	                    		查看所有宝贝
+	                    	</div>
+	                    	<div id="div31">
+	                    		<ul class="ul3">
+	                    		<li class="li8"><a href="#" class="a5">按综合</a></li>
+	                    		<li class="li8"><a href="#" class="a5">按销量</a></li>
+	                    		<li class="li8"><a href="#" class="a5">按新品</a></li>
+	                    		<li class="li8"><a href="#" class="a5">按价格</a></li>	
+	                    		</ul>				
+	                    	</div>
+	                    	<div class="div30">
+	                    		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	                    		&nbsp;&nbsp;&nbsp;&nbsp;
+	                    		<img src="../img1/adbtn.png" id="i2" />	               
+	                    		爆款区
+	                    	</div>
+	                    	<div id="div32">
+	                    		<ul class="ul4">
+	                    		<li class="li9"><a href="#" class="a5">TOP套件</a></li>
+	                    		<li class="li9"><a href="#" class="a5">TOP夏被</a></li>
+	                    		<li class="li9"><a href="#" class="a5">TOP凉席</a></li>
+	                    		<li class="li9"><a href="#" class="a5">TOP枕芯</a></li>
+	                    		<li class="li9"><a href="#" class="a5">TOP床垫</a></li>
+	                    		<li class="li9"><a href="#" class="a5">TOP家具</a></li>	
+	                    		</ul>				
+	                    	</div>
+	                    	<div class="div30">
+	                    		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	                    		&nbsp;&nbsp;&nbsp;&nbsp;
+	                    		<img src="../img1/adbtn.png" id="i3" />	               
+	                    		当季新品
+	                    	</div>
+	                    	<div id="div33">
+	                    		<ul class="ul4">
+	                    		<li class="li9"><a href="#" class="a5">套件区</a></li>
+	                    		<li class="li9"><a href="#" class="a5">夏凉区</a></li>
+	                    		<li class="li9"><a href="#" class="a5">凉席区</a></li>
+	                    		<li class="li9"><a href="#" class="a5">枕芯区</a></li>
+	                    		<li class="li9"><a href="#" class="a5">床垫区</a></li>
+	                    		<li class="li9"><a href="#" class="a5">家居区</a></li>	
+	                    		</ul>				
+	                    	</div>
+	                    	<div class="div30">
+	                    		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	                    		&nbsp;&nbsp;&nbsp;&nbsp;
+	                    		<img src="../img1/adbtn.png" id="i4" />	               
+	                    		套件系列
+	                    	</div>
+	                    	<div id="div34">
+	                    		<ul class="ul4one">
+	                    		<li class="li9"><a href="#" class="a5">全棉面料</a></li>
+	                    		<li class="li9"><a href="#" class="a5">磨毛面料</a></li>
+	                    		<li class="li9"><a href="#" class="a5">天丝面料</a></li>
+	                    		<li class="li9"><a href="#" class="a5">丝绵面料</a></li>
+	                    		<li class="li9"><a href="#" class="a5">贡缎面料</a></li>
+	                    		<li class="li9"><a href="#" class="a5">提花面料</a></li>
+	                    		<li class="li9"><a href="#" class="a5">其他面料</a></li>
+	                    		<li class="li9"><a href="#" class="a5">婚庆套件</a></li>
+	                    		<li class="li9"><a href="#" class="a5">儿童套件</a></li>
+	                    		<li class="li9"><a href="#" class="a5">多件套</a></li>
+	                    		<li class="li9"><a href="#" class="a5">专柜同款</a></li>	
+	                    		</ul>				
+	                    	</div>
+	                    	<div class="div30">
+	                    		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	                    		&nbsp;&nbsp;&nbsp;&nbsp;
+	                    		<img src="../img1/adbtn.png" id="i5" />	               
+	                    		套件风格
+	                    	</div>
+	                    	<div id="div35">
+	                    		<ul class="ul4one">
+	                    		<li class="li9"><a href="#" class="a5">雍容花卉</a></li>
+	                    		<li class="li9"><a href="#" class="a5">古典民族</a></li>
+	                    		<li class="li9"><a href="#" class="a5">清新田园</a></li>
+	                    		<li class="li9"><a href="#" class="a5">英伦公主</a></li>
+	                    		<li class="li9"><a href="#" class="a5">萌趣卡通</a></li>
+	                    		<li class="li9"><a href="#" class="a5">简约条纹</a></li>
+	                    		<li class="li9"><a href="#" class="a5">魅力北欧</a></li>
+	                    		<li class="li9"><a href="#" class="a5">高端奢华</a></li>	
+	                    		</ul>				
+	                    	</div>
+	                    	<div class="div30">
+	                    		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	                    		&nbsp;&nbsp;&nbsp;&nbsp;
+	                    		<img src="../img1/adbtn.png" id="i6" />	               
+	                    		夏被系列
+	                    	</div>
+	                    	<div id="div36">
+	                    		<ul class="ul4">
+	                    		<li class="li9"><a href="#" class="a5">纯棉夏被</a></li>
+	                    		<li class="li9"><a href="#" class="a5">天丝夏被</a></li>
+	                    		<li class="li9"><a href="#" class="a5">纤维夏被</a></li>
+	                    		<li class="li9"><a href="#" class="a5">蚕丝夏被</a></li>
+	                    		<li class="li9"><a href="#" class="a5">印花夏被</a></li>
+	                    		<li class="li9"><a href="#" class="a5">其他</a></li>	
+	                    		</ul>				
+	                    	</div>
+	                    
+	                    </div>
+	                    <script>
+	                    var A = document.getElementById("i1");
+	                    var B = document.getElementById("i2");
+	                    var C = document.getElementById("i3");
+	                    var D = document.getElementById("i4");
+	                    var E = document.getElementById("i5");
+	                    var F = document.getElementById("i6");
+	                 
+	                    var Div1 = document.getElementById("div31");
+	                    var Div2 = document.getElementById("div32");
+	                    var Div3 = document.getElementById("div33");
+	                    var Div4 = document.getElementById("div34");
+	                    var Div5 = document.getElementById("div35");
+	                    var Div6 = document.getElementById("div36");
+	                    
+	                    var i=0; var j=0;var k=0; var l=0;var q=0; var w=0;
+	                    A.onclick=function(){
+	                    	
+	                    	if(i==0){
+	                    		Div1.setAttribute("style","display:none;");
+	                    	
+	                    		i=1;
+	                    	}
+	                    	else if(i==1){
+	                    		Div1.setAttribute("style","display:block;");
+	                    
+	                    		i=0;
+	                    	}
+	                    };
+	                    B.onclick=function(){
+	                    	
+	                    	if(j==0){
+	                    		Div2.setAttribute("style","display: none;");
+	                    	
+	                    		j=1;
+	                    	}
+	                    	else if(j==1){
+	                    		Div2.setAttribute("style","display: block;");
+	                    	
+	                    		j=0;
+	                    		
+	                    	}
+	                    };
+	                    C.onclick=function(){
+	                    	
+	                    	if(k==0){
+	                    		Div3.setAttribute("style","display: none;");
+	                    	
+	                    		k=1;
+	                    	}
+	                    	else if(k==1){
+	                    		Div3.setAttribute("style","display: block;");
+	                    	
+	                    		k=0;
+	                    		
+	                    	}
+	                    };
+	                    D.onclick=function(){
+	                    	
+	                    	if(l==0){
+	                    		Div4.setAttribute("style","display: none;");
+	                    	
+	                    		l=1;
+	                    	}
+	                    	else if(l==1){
+	                    		Div4.setAttribute("style","display: block;");
+	                    	
+	                    		l=0;
+	                    		
+	                    	}
+	                    };
+	                    E.onclick=function(){
+	                    	
+	                    	if(q==0){
+	                    		Div5.setAttribute("style","display: none;");
+	                    	
+	                    		q=1;
+	                    	}
+	                    	else if(q==1){
+	                    		Div5.setAttribute("style","display: block;");
+	                    	
+	                    		q=0;
+	                    		
+	                    	}
+	                    };
+	                    F.onclick=function(){
+	                    	
+	                    	if(w==0){
+	                    		Div6.setAttribute("style","display: none;");
+	                    	
+	                    		w=1;
+	                    	}
+	                    	else if(w==1){
+	                    		Div6.setAttribute("style","display: block;");
+	                    	
+	                    	w=0;
+	                    		
+	                    	}
+	                    };
+	                    </script>
+	                
+	              <div id="div8">
+                    <div class="div11">
+                    	<!--&nbsp;&nbsp;-->
+                    	<span id="span8"style="height: 48px;width: 80px;float: left;text-align: center;">
+                    		商品详情
+                    	</span>
+                    	<span id="span9"style="height: 48px;width: 120px;float: left;text-align: center;color: black;">
+                    		累计评价
+                    		<span id="comment-num"style="color: steelblue;">
+                    			723
+                    		</span>
+                    	</span>
+                    	<!--<span id="span8"style="width: 50px;height: 48px;text-align: center;">
+                    		商品详情
+                    	</span>
+                    	<span id="span9"style="width: 50px;height: 48px;text-align: center;">
+                    		累计评价
+                    	</span>-->
+                    	<!--<span id="span8"style="float: left;margin-left: 30px;">商品详情 </span>
+                    	&nbsp;&nbsp;
+                    	<span id="span8"style="float: left;">累计评价&nbsp;<span id="span9">28125</span></span>-->
+                    	<!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+                       <!--<style type="text/css">
+                       .pmenu .sonmenu
+		                  {display: none;}
+		                .pmenu:hover{
+                       		background-color: ghostwhite;
+                       	} 
+                       	.pmenu:hover .sonmenu{
+                       		display: block;
+                       	}
+                       </style>-->
+                       <span class="pmenu"style="float:right;width: 120px;height: 48px;padding-left:20px;position: relative; ">   
+	                       	<a id="a4" style="float: left;width: 60px;height: auto;font-size: 10px;text-decoration: none;">手机购买</a>
+	                       	<img src="../img1/smcode.png"  style="float: left;width: 25px;margin-top: 12px;"/>
+	                       	<div class="sonmenu"style="width:157px;height:157px;position: absolute;top:46px;right:0;background: url(../img/two-code.png);border:1px solid darkgrey;"></div>
+                       </span>
+                      
+                    </div>
+                    	
+                    
+                    	<div id="div16">
+                    	<div id="div21">
+            <img src="../img1/pjxx.jpg"  >
+                           </div>
+                           <div id="div22"style="height: 40px;padding-top: 8px;padding-left: 10px;">
+                           	<style type="text/css">
+                           		.form-choose{
+                           			display: block;
+                           			width: auto;
+                           			height: 20px;
+                           			float: left;
+                           			font-family: "微软雅黑";
+                           			font-size: 10px;
+                           			padding-top: 2px;
+                           			padding-left: 5px;
+                           			padding-right: 5px;
+                           			text-align: center;
+                           			margin-right: 5px;
+                           		}
+                           	</style>
+                           	<input type="checkbox"  style="float: left;"/><span id=""class="form-choose">全部</span>
+                           	<input type="checkbox"  style="float: left;"/><span id=""class="form-choose">追评（5）</span>
+                           	<input type="checkbox"  style="float: left;"/><span id=""class="form-choose">图片</span> 
+                           	<!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                           	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                           	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                           	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+                           	<!--<span style="width:300px;height: 12px;background-color:#F0F0F0;float: left;"></span>-->
+                           <select name=""style="float: right;font-family: '微软雅黑';font-size: 10px;margin:0 15px;">
+                           		<option value="按时间">按时间</option>
+                           		<option value="按默认">按默认</option>
+                           	</select>
+                           	     <div style="float: right;">
+                           	     	<input type="checkbox" checked="checked"style="float: left;"/>
+                           	     	<span id=""class="form-choose">有内容</span>
+                           	     </div>
+                           
+                           	
+                           </div>
+                           <div class="div20"style="border-left: none;">
+                           	<table>
+                           		<tr>                     		
+                           			<td class="td1">
+                           				<div class="div23">
+                           				质量不错，喜欢，这次买了好几床，好评!
+                           				</div>
+                           				<div class="div23">
+                           					<img src="../img1/TB2V_I6fv9TBuNjy1zbXXXpepXa_!!0-rate.jpg_40x40.jpg"/>
+                           				</div>
+                           				<div class="div23">
+                           					<span class="span11one">03.23</span>
+                           				</div>
+                           				<div class="div23">
+                           					<span class="span11">卖家：感谢亲的大力支持呢 富安娜品牌所在 质量保证呢</span>
+                           				</div>
+                           			</td>
+                           			<td class="td1">
+                           			<div class="div24">
+                           					使用床尺寸：<span class="span11one">1.8(6英尺)</span>
+                           				</div>	
+                           				<div class="div24">
+                           					颜色分类：
+                           					<span class="span11one"></span>爱在不列颠
+                           				</div>
+                           			</td>
+                           			<td class="td1">
+                           				<div class="div25">
+                           					t***8<span class="span11one">(匿名)</span>
+                           				</div>	
+                           				<div class="div25">
+                           					<span class="span11">超级会员</span>
+                           				</div>
+                           			</td>                  			
+                           		</tr>  
+                           		<tr>                     		
+                           			<td class="td1"><div class="div23">
+                           				到货才知道是富安娜旗下的馨而乐，手提袋也是馨而乐，质量不错，自用的就留着了
+                           				</div>
+                           				<div class="div23">
+                           					<img src="../img1/TB28UBldaSWBuNjSsrbXXa0mVXa_!!0-rate.jpg_40x40.jpg"/>
+                           				</div>
+                           				<div class="div23">
+                           					<span class="span11one">03.12</span>
+                           				</div>
+                           			</td>
+                           			<td class="td1">
+                           			<div class="div24">
+                           					使用床尺寸：<span class="span11one">1.8(6英尺)</span>
+                           				</div>	
+                           				<div class="div24">
+                           					颜色分类：<span class="span11one">爱在不列颠</span>
+                           				</div>
+                           			</td>
+                           			<td class="td1">
+                           				<div class="div25">
+                           					喷***4<span class="span11one">(匿名)</span>
+                           				</div>	
+                           				<div class="div25">
+                           				<span class="span11">超级会员</span>
+                           				</div>
+                           			</td>                  			
+                           		</tr>
+                           		<tr>                     		
+                           			<td class="td1"><div class="div23">
+                           				非常好全5分好评
+                           				</div>
+                           				<div class="div23">
+                           					<img src="../img1/TB2kRJHa.OWBKNjSZKzXXXfWFXa_!!0-rate.jpg_40x40.jpg"/>
+                           				</div>
+                           				<div class="div23">
+                           					<span class="span11one">03.17</span>
+                           				</div>
+                           			</td>
+                           			<td class="td1">
+                           			<div class="div24">
+                           					使用床尺寸：<span class="span11one">1.8(6英尺)</span>
+                           				</div>	
+                           				<div class="div24">
+                           					颜色分类：<span class="span11one">爱在不列颠</span>
+                           				</div>
+                           			</td>
+                           			<td class="td1">
+                           				<div class="div25">
+                           					芊***色<span class="span11one">(匿名)</span>
+                           				</div>	
+                           				<div class="div25">
+                           					<span class="span11">超级会员</span>
+                           				</div>
+                           			</td>                  			
+                           		</tr>
+                           		<tr>                     		
+                           			<td class="td1">
+                           				<div class="div23">
+                           				A版漂亮欧式田园，B版的颜色只能凑合吧～
+                           				</div>
+                           				
+                           				<div class="div23">
+                           					<span class="span11one">05.17</span>
+                           				</div>
+                           				<div class="div23">
+                           					<span class="span11">卖家：感谢亲的大力支持呢 富安娜品牌所在 质量保证呢</span>
+                           				</div>
+                           			</td>
+                           			<td class="td1">
+                           			<div class="div24">
+                           					使用床尺寸：<span class="span11one">1.8(6英尺)</span>
+                           				</div>	
+                           				<div class="div24">
+                           					颜色分类：<span class="span11one">爱在不列颠</span>
+                           				</div>
+                           			</td>
+                           			<td class="td1">
+                           				<div class="div25">
+                           					优***日<span class="span11one">(匿名)</span>
+                           				</div>	
+                           				<div class="div25">
+                           					<span class="span11">超级会员</span>
+                           				</div>
+                           			</td>                  			
+                           		</tr>  
+                           		<tr>                     		
+                           			<td class="td1"><div class="div23">
+                           				很喜欢，质量很好，床单够大
+                           				</div>
+                           				
+                           				<div class="div23">
+                           					<span class="span11one">03.13</span>
+                           				</div>
+                           			</td>
+                           			<td class="td1">
+                           			<div class="div24">
+                           					使用床尺寸：<span class="span11one">1.8(6英尺)</span>
+                           				</div>	
+                           				<div class="div24">
+                           					颜色分类：<span class="span11one">爱在不列颠</span>
+                           				</div>
+                           			</td>
+                           			<td class="td1">
+                           				<div class="div25">
+                           					对***儿<span class="span11one">(匿名)</span>
+                           				</div>	
+                           				<div class="div25">
+                           				<span class="span11">超级会员</span>
+                           				</div>
+                           			</td>                  			
+                           		</tr>
+                           		<tr>                     		
+                           			<td class="td1"><div class="div23">
+                           				前10秒半价买的 200块钱入的 还可以吧 如果是原价就可能有点不划算了买了四件有三样是馨而乐的牌子
+                           				 不是富安娜的那个床单固定的松紧绳已经全部拆了感觉没必要 总之前10秒三件半价买的还蛮划算的了
+                           				</div>
+                           				
+                           				<div class="div23">
+                           					<span class="span11one">04.28</span>
+                           				</div>
+                           			</td>
+                           			<td class="td1">
+                           			<div class="div24">
+                           					使用床尺寸：<span class="span11one">1.8(6英尺)</span>
+                           				</div>	
+                           				<div class="div24">
+                           					颜色分类：<span class="span11one">爱在不列颠</span>
+                           				</div>
+                           			</td>
+                           			<td class="td1">
+                           				<div class="div25">
+                           					好***敏<span class="span11one">(匿名)</span>
+                           				</div>	
+                           				<div class="div25">
+                           					<span class="span11">超级会员</span>
+                           				</div>
+                           			</td>                  			
+                           		</tr>
+                           		<tr>                     		
+                           			<td class="td1">
+                           				<div class="div23">
+                           				快，手感不错，但还没下水洗，不知道洗后怎样。
+                           				</div>
+                           				
+                           				<div class="div23">
+                           					<span class="span11one"></span>03.23
+                           				</div>
+                           				<div class="div23">
+                           					<span class="span11">解释：感谢亲的大力支持呢 富安娜品牌所在 质量保证呢</span>
+                           				</div>
+                           			</td>
+                           			<td class="td1">
+                           			<div class="div24">
+                           					使用床尺寸：<span class="span11one">1.8(6英尺)</span>
+                           				</div>	
+                           				<div class="div24">
+                           					颜色分类：<span class="span11one">爱在不列颠</span>
+                           				</div>
+                           			</td>
+                           			<td class="td1">
+                           				<div class="div25">
+                           					华***2<span class="span11one">(匿名)</span>
+                           				</div>	
+                           				<div class="div25">
+                           					<span class="span11">超级会员</span>
+                           				</div>
+                           			</td>                  			
+                           		</tr>  
+                           		<tr>                     		
+                           			<td class="td1"><div class="div23">
+                           				没图片颜色鲜亮
+                           				</div>
+                           			
+                           				<div class="div23">
+                           					<span class="span11one">2018.5.01</span>
+                           				</div>
+                           			</td>
+                           			<td class="td1">
+                           			<div class="div24">
+                           					使用床尺寸：<span class="span11one">1.8(6英尺)</span>
+                           				</div>	
+                           				<div class="div24">
+                           					颜色分类：<span class="span11one">爱在不列颠</span>
+                           				</div>
+                           			</td>
+                           			<td class="td1">
+                           				<div class="div25">
+                           					乖***8<span class="span11one">(匿名)</span>
+                           				</div>	
+                           				<div class="div25">
+                           				<span class="span11">超级会员</span>
+                           				</div>
+                           			</td>                  			
+                           		</tr>
+                           		<tr>                     		
+                           			<td class="td1"><div class="div23">
+                           				不错 等用了再追加
+                           				</div>
+                           				
+                           				<div class="div23">
+                           					<span class="span11one">2018.4.05</span>
+                           				</div>
+                           				<div class="div23">
+                           				<span class="span11">卖家：时间宛如河水般流逝，而所有的一切都将回归其本源，好与不好，
+                           					在时间的沉淀下，都能看出本质~相信您的选择没有错！</span>
+                           				</div>
+                           			</td>
+                           			<td class="td1">
+                           			<div class="div24">
+                           					使用床尺寸：<span class="span11one">1.8(6英尺)</span>
+                           				</div>	
+                           				<div class="div24">
+                           					颜色分类：<span class="span11one">爱在不列颠</span>
+                           				</div>
+                           			</td>
+                           			<td class="td1">
+                           				<div class="div25">
+                           					沙***q<span class="span11one">(匿名)</span>
+                           				</div>	
+                           				<div class="div25">
+                           					<span class="span11">超级会员</span>
+                           				</div>
+                           			</td>                  			
+                           		</tr>
+                            	</table>
+                           
+                           </div>
+                           <div class="div20">
+                           	<!--<img src="../img1/大礼包.jpg"/>-->
+                           	<img src="../img1/xbed1.png" class="img2"/>
+                           	<img src="../img1/xbed2.png" class="img2"/>
+                           	<img src="../img1/xbed3.png" class="img2"/>
+                           	<img src="../img1/xbed4.png" class="img2"/>
+                           	<img src="../img1/xbed5.png" class="img2"/>
+                           	<img src="../img1/xbed6.png" class="img2"/>
+                           	
+                           </div>
+                           <div class="div29">
+                           		<span class="span16">安全提示：</span><p class="p10">请勿随意接收任何来源不明的文件，请勿随意点击任何来源不明的链接。
+                           		涉及资金往来的事项请务必仔细核对资金往来信息。 天猫不会以订单有问题，让您提供任何银行卡、密码、手机验证码！
+                           		遇到可疑情况可在钱盾“诈骗举报”中进行举报, 安全推荐</p><p class="p10">推荐安全软件：钱盾UC浏览器</p>
+                           		<hr style="background-color: red;height:1px;border:0"/>
+                           		<span class="span16">内容声明：</span><p class="p11">天猫为第三方交易平台及互联网信息服务提供者，天猫（含网站、客户端等）所展示的商品/服务的标题、价格、详情等信息内容系由店铺经营者发布，其真实性、准确性和合法性均由店铺经营者负责。
+                           	           天猫提醒用户购买商品/服务前注意谨慎核实。如用户对商品/服务的标题、价格、详情等任何信息有任何疑问的，请在购买前通过阿里旺旺与店铺经营者沟通确认；
+                           	           天猫存在海量店铺，如用户发现店铺内有任何违法/侵权信息，请立即向天猫举报并提供有效线索。</p>
+                           	</div>
+                    	</div>
+                    
+                    	<div id="div15">
+                    	<div class="div13">
+            <img src="../img1/yly.jpg" id="img1" style="width: 123px;height: 90px;"/>
+            <p id="p5">
+                                    该商品参与了公益宝贝计划，卖家承诺每笔成交将为
+            <strong style="color: #E10000;">贰乐园计划</strong>
+                                    捐赠
+            <strong style="color: #E10000;">0.02元</strong>
+                                    。该商品已累积捐赠
+            <strong style="color: #E10000;">30152笔</strong>
+                                     。<br />
+           <p id="p5one">善款用途简介：基于游戏教育在儿童成长中的重要性，壹基金设立了“壹乐园计划”，帮助提供滑梯、攀爬架、跷跷板、秋千、乒乓球桌等，为灾后及贫困地区的孩子们搭建课..<a href="#" style="color:#0089BB;"><strong>了解详情>></strong></a></p> 
+            </p>
+                           </div>
+                           <div id="div17">
+                           <p class="p6">品牌名称：富安娜</p>
+                           <p class="p6one">产品参数：</p>
+                          <ul style="margin-left: 15px;">
+                             <li class="li7">件数:4件</li>
+                           	 <li class="li7">被面材质:棉</li>
+                           	 <li class="li7">品牌:富安娜</li>
+                           	 <li class="li7">货号:811001837</li>
+                           	 <li class="li7">被里材质:棉</li>
+                             <li class="li7">棉种类:棉</li>
+                           	 <li class="li7">成分含量:100%</li>
+                           	 <li class="li7">床品工艺:其他</li>
+                           	 <li class="li7">适用床尺寸:1.5m(5英尺) 床&nbsp;1.8m(5英尺) 床 </li>
+                           	 <li class="li7">图案:植物花卉</li>	
+                             <li class="li7">款式:床单式</li>
+                           	 <li class="li7">颜色分类:爱在不列颠</li>
+                           	 <li class="li7">产品等级:合格品</li>
+                           	 <li class="li7">风格:田园</li>
+                           	 <li class="li7">面料支数:40支</li>
+                           	 <li class="li7">面料密度:纯棉斜纹印花</li>
+                           	 <li class="li7">织造工艺:斜纹</li>	
+                           	 	
+                           	 	
+                           </ul>
+                          
+                           	
+                           </div>
+                           <div class="div20">
+                           	<img src="../img1/xqybad.png" />
+                           	<img src="../img1/bedsize.png" />
+                           	<img src="../img1/cm.jpg" /> 
+                           	<img src="../img1/zw.jpg" />
+                           	<img src="../img1/xqyyinz.png" />
+                           	<img src="../img1/zjbg.jpg" />
+                           	<img src="../img1/mshydz.jpg" />
+                           	<img src="../img1/spsp.jpg" />
+                           	<img src="../img1/bmbl.jpg" />
+                           	<img src="../img1/mlzt.jpg" /> 	
+                           	<img src="../img1/spcs.jpg" />
+                           	<img src="../img1/xqy_55.png" /> 	
+                           </div>
+                           <div class="div20">
+                           	<img src="../img1/dlb.jpg"/>
+                           </div>
+                           <div class="div26">
+                           	&nbsp;&nbsp;店铺30天服务情况
+                           </div>
+                           <div class="div20">
+                           	<table>
+                           		<tr>
+                           		<td>
+                           			<div class="div27">
+                           				<span class="span13">纠纷退款率：</span><span class="span12"> 0.0000% </span><span class="span17">小于 0.0001% （行业均值）</span>
+                           			</div>
+                           			</td>
+                           			<td>
+                           			<div class="div27">
+                           				<span class="span13">仅退款自主完结时长：</span><span class="span12"> 0.28天</span> <span class="span17">小于 0.45天 （行业均值）</span>
+                           			</div>
+                           			</td>                         		
+                           		</tr>
+                           			<tr>
+                           		<td>
+                           			<div class="div27">
+                           				<span class="span13">退货退款自主完结时长：</span><span class="span12"> 3.60 </span><span class="span17">小于 3.83 （行业均值）</span>
+                           			</div>
+                           			</td>
+                           			<td>
+                           			<div class="div27">
+                           				<span class="span13">退款自主完结率：</span><span class="span12"> 99.87%</span> <span class="span17">等于99.87% （行业均值）</span>
+                           			</div>
+                           			</td>                         		
+                           		</tr>		
+                           	</table>
+                           	<p id="p9">店铺动态评分：(所属行业：家居用品)</p>
+                           	<table>
+                           		<tr>
+                           			<td>
+                           				<div class="div28">
+                           					<span class="span14">商品与描述相符：</span><span class="span15"> 4.8</span><span class="span17">分</span>
+                           					<img src="../img1/grade1.png" class="img4"/>
+                           				</div>
+                           				<div class="div28">
+                           					<span class="span14">商品的服务态度：</span><span class="span15"> 4.8</span><span class="span17">分</span>
+                           					<img src="../img1/grade2.png" class="img4"/>
+                           				</div>
+                           				<div class="div28">
+                           					<span class="span14">商品的发货速度：</span><span class="span15"> 4.8</span><span class="span17">分</span>
+                           					<img src="../img1/grade3.png" class="img4" />
+                           				</div>
+                           			</td>
+                           		</tr>
+                           	</table>
+                           </div>
+                             <div class="div26">
+                           	&nbsp;&nbsp;猜你喜欢
+                           </div>
+                           <div class="div20">
+                           	<img src="../img1/xbed1.png" class="img2"/>
+                           	<img src="../img1/xbed2.png" class="img2"/>
+                           	<img src="../img1/xbed3.png" class="img2"/>
+                           	<img src="../img1/xbed4.png" class="img2"/>
+                           	<img src="../img1/xbed5.png" class="img2"/>
+                           	<img src="../img1/xbed6.png" class="img2"/>
+                           	</div>
+                           	<div class="div29">
+                           		<span class="span16">安全提示：</span><p class="p10">请勿随意接收任何来源不明的文件，请勿随意点击任何来源不明的链接。
+                           		涉及资金往来的事项请务必仔细核对资金往来信息。 天猫不会以订单有问题，让您提供任何银行卡、密码、手机验证码！
+                           		遇到可疑情况可在钱盾“诈骗举报”中进行举报, 安全推荐</p><p class="p10">推荐安全软件：<img src="../img1/moneysave.png"/><span class="span18">钱盾</span>&nbsp; <img src="../img1/uc.png"/><span class="span18">UC浏览器</span></p>
+                           		<hr style="height:1px;border:none;border-top:1px solid #FFE8CA;width:700px; " />
+                           		<span class="span16">内容声明：</span><p class="p11">天猫为第三方交易平台及互联网信息服务提供者，天猫（含网站、客户端等）所展示的商品/服务的标题、价格、详情等信息内容系由店铺经营者发布，其真实性、准确性和合法性均由店铺经营者负责。
+                           	           天猫提醒用户购买商品/服务前注意谨慎核实。如用户对商品/服务的标题、价格、详情等任何信息有任何疑问的，请在购买前通过阿里旺旺与店铺经营者沟通确认；
+                           	           天猫存在海量店铺，如用户发现店铺内有任何违法/侵权信息，请立即向天猫举报并提供有效线索。</p>
+                           	</div>
+                           	
+                           </div>
+                           
+                    	</div>
+                    	
+                    
+                    	
+	                    </div>
+	                    <!--<div id=""style="border-image: url(../img/border-image.png) 25 25 round;">
+	                    	
+	                    </div>-->
+	  <script>
+	  	var oshop = document.getElementById("span8");
+	  	var oremark =document.getElementById("span9");
+	  	var com=document.getElementById("comment-num");
+	  	var odiv = document.getElementById("div15");
+	  	var oDiv = document.getElementById("div16");
+	  	//border-image: url(../img/border-image.png);border-image-slice: 6;border-image-width: 6px;
+	  	oshop.onclick=function(){
+	  		    oshop.style.fontWeight="bold";
+	  		    oremark.style.fontWeight="normal";
+	  		    oshop.style.color="#FF3C5B";
+	  		    oremark.style.color="black";
+	  		    oshop.style.borderImage="url(../img/border-image.png)";
+	  		    oshop.style.borderImageSlice="6";
+	  		    oshop.style.borderImageWidth="6px";
+	  		    oremark.style.borderImage="url(../img/border-image.png)";
+	  		    oremark.style.borderImageSlice="6";
+	  		    oremark.style.borderImageWidth="0";
+	  		    odiv.setAttribute("style","display: block;");
+	  			oDiv.setAttribute("style","display: none;");
+	  	};
+	  		oremark.onclick=function(){
+	  			oremark.style.fontWeight="bold";
+	  			oshop.style.fontWeight="normal";
+	  			oshop.style.color="black";
+	  			oremark.style.color="#FF3C5B";
+	  			com.style.color="steelblue";
+	  		    oremark.style.borderImage="url(../img/border-image.png)";
+	  		    oremark.style.borderImageSlice="6";
+	  		    oremark.style.borderImageWidth="6px";
+	  		     oshop.style.borderImage="url(../img/border-image.png)";
+	  		    oshop.style.borderImageSlice="6";
+	  		    oshop.style.borderImageWidth="0";
+	  		    oDiv.setAttribute("style","display: block;");
+	  			odiv.setAttribute("style","display: none;");
+	  			
+	  	
+	  	}
+	  	
+	  </script>                  
+	                    
+	                    
+	            <div id="div9">
+	            	<div id="div12">
+	            		
+	            	
+                         <ul class="ul2">
+                         	<li class="li2"style="margin-top: 40px;"><a href="#" class="a6">商品情景</a></li>
+                         	<li class="li2"><a href="#" class="a6">商品实拍</a></li>
+                         	<li class="li2"><a href="#" class="a6">商品细节</a></li>
+                         	<li class="li2"><a href="#" class="a6">商品参数</a></li>
+                         	<li class="li2"><a href="#" class="a6">包装图示</a></li>
+                         	<li class="li2"><a href="#" class="a6">购买说明</a></li>
+                         	<li class="li2"><a href="#" class="a6">服务质量</a></li>
+                         </ul>
+                    </div>
+	            </div>
+		    </div>
+		                  
+			
+		</div>
+		                  
+		<div id="footer"style="float: left;">
+				<hr />
+				<div class="container" style="padding-top: 30px;">
+			   		
+			   		<div class="row">
+			   			<div class="col-md-3 col-sm-6 col-xs-12" style="padding-left: 50px;">
+			   				<span class="text-red foot-span"><b>优</b></span>
+			   			    <div class="font-yh" style="float: left;height: 50px;margin-left: 10px;">
+			   			    	<p><b>品质保障</b></p>
+			   			    	<p style="color: #888888;">品质护航，购物无忧</p>
+			   			    </div>
+			   			</div>
+			   			<div class="col-md-3 col-sm-6 col-xs-12"style="padding-left: 50px;">
+			   				<span class="text-red foot-span"><b>七</b></span>
+			   			    <div class="font-yh" style="float: left;height: 50px;margin-left: 10px;">
+			   			    	<p><b>七天无理由退换货</b></p>
+			   			    	<p style="color: #888888;">为您提供售后无忧保障</p>
+			   			    </div>
+			   			</div>
+			   			<div class="col-md-3 col-sm-6 col-xs-12"style="padding-left: 50px;">
+			   			    <span class="text-red foot-span"><b>特</b></span>
+			   			    <div class="font-yh" style="float: left;height: 50px;margin-left: 10px;">
+			   			    	<p><b>特色服务体验</b></p>
+			   			    	<p style="color: #888888;">为您呈现不一样的服务</p>
+			   			    </div>	
+			   			</div>
+			   			<div class="col-md-3 col-sm-6 col-xs-12"style="padding-left: 50px;">
+			   				<span class="text-red foot-span"><b>帮</b></span>
+			   			    <div class="font-yh" style="float: left;height: 50px;margin-left: 10px;">
+			   			    	<p><b>帮助中心</b></p>
+			   			    	<p style="color: #888888;">您的购物指南</p>
+			   			    </div>
+			   			</div>
+			   		
+			   		</div>
+			   		<br /><br />
+			   		<hr />
+			   		
+			   		
+			   	</div>
+			   	<div class="container-fluid" style="padding-top: 0px;">
+			   		<div class="row" >
+			   			
+			   			<div class="col-md-2 col-sm-6 col-xs-12" style="padding-left: 50px;margin-left:100px">
+			   				<h4 class="font-st" style="font-size: large;">购物指南</h4>
+			   				<a class="text-darkgrey" href="">免费注册</a><br />
+			   				<a class="text-darkgrey" href="">开通支付宝</a><br />
+			   				<a class="text-darkgrey" href="">支付宝充值</a>
+			   			</div>
+			   			<div class="col-md-2 col-sm-6 col-xs-12" style="padding-left: 50px;">
+			   				<h4 class="font-yh" style="font-size: large;">天猫保障</h4>
+			   				<a class="text-darkgrey" href="">发票保障 </a><br />
+			   				<a class="text-darkgrey" href="">售后规则</a><br />
+			   				<a class="text-darkgrey" href="">缺货赔付</a>
+			   			</div>
+			   			<div class="col-md-2 col-sm-6 col-xs-12" style="padding-left: 50px;">
+			   				<h4 class="font-yh" style="font-size: large;">支付方式</h4>
+			   				<a class="text-darkgrey" href="">快捷支付</a><br />
+			   				<a class="text-darkgrey" href="">信用卡</a><br />
+			   				<a class="text-darkgrey" href="">余额宝</a><br />
+			   				<a class="text-darkgrey" href="">蚂蚁花呗</a><br />
+			   				<a class="text-darkgrey" href="">货到付款</a>
+			   			</div>
+			   			<div class="col-md-2 col-sm-6 col-xs-12" style="padding-left: 50px;">
+			   				<h4 class="font-yh" style="font-size: large;">商家服务</h4>
+			   				<a class="text-darkgrey" href="">天猫规则</a><br />
+			   				<a class="text-darkgrey" href="">商家入驻</a><br />
+			   				<a class="text-darkgrey" href="">商家中心</a><br />
+			   				<a class="text-darkgrey" href="">天猫智库</a><br />
+			   				<a class="text-darkgrey" href="">物流服务</a><br />
+			   				<a class="text-darkgrey" href="">喵言喵语</a><br />
+			   				<a class="text-darkgrey" href="">运营服务</a><br />
+			   			</div>
+			   			<div class="col-md-2 col-sm-6 col-xs-12" style="padding-left: 50px;">
+			   				<h4 class="font-yh" style="font-size: large;">手机天猫</h4>
+			   				<img src="../img/foot-ewm.png"/>
+			   			</div>
+			   		</div>
+			   	</div>
+			   	
+			   	<div id="foot2"style="position:relative;">
+			   		<img src="../img/TMALL_cat.png"height="30px"style="position: absolute;top: -31px;"/>
+			   		
+			   		<p>
+			   			<a class="foot2-a"href="">关于天猫</a>
+				   		<a class="foot2-a"href="">帮助中心</a>
+				   		<a class="foot2-a"href="">开放平台</a>
+				   		<a class="foot2-a"href="">诚聘英才</a>
+				   		<a class="foot2-a"href="">联系我们</a>
+				   		<a class="foot2-a"href="">网站合作</a>
+				   		<a class="foot2-a"href="">法律声明</a>
+				   		<a class="foot2-a"href="">隐私权政策</a>
+				   		<a class="foot2-a"href="">知识产权</a>
+				   		<a class="foot2-a"href="">廉正举报</a>
+			   		</p>
+			   		<p>
+			   			<a href="" class="aa foot2-a">阿里巴巴集团</a>
+				   		<a href="" class="aa foot2-a">淘宝网</a>
+				   		<a href="" class="aa foot2-a">天猫</a>
+				   		<a href="" class="aa foot2-a">聚划算</a>
+				   		<a href="" class="aa foot2-a">全球速卖通</a>
+				   		<a href="" class="aa foot2-a">阿里巴巴国际交易市场</a>
+				   		<a href="" class="aa foot2-a">1688</a>
+				   		<a href="" class="aa foot2-a">阿里妈妈</a>
+				   		<a href="" class="aa foot2-a">飞猪</a>
+				   		<a href="" class="aa foot2-a">阿里云计算</a>
+				   		<a href="" class="aa foot2-a">AliOS</a>
+				   		<a href="" class="aa foot2-a">阿里通信</a>
+				   		<a href="" class="aa foot2-a">万网</a>
+				   		<a href="" class="aa foot2-a">高德</a>
+				   		<a href="" class="aa foot2-a">UC</a>
+				   		<a href="" class="aa foot2-a">友盟</a>
+				   		<a href="" class="aa foot2-a">虾米</a>
+				   		<a href="" class="aa foot2-a" style="border-right: 0;">支付宝</a>
+			   		</p>
+			   		<span class="foot2-span">增值电信业务经营许可证： </span>
+			   		<a href="" class="foot2-aa">浙B2-20110446</a>
+			   		<span class="foot2-span" style="margin-left: 60px;">
+			   			网络文化经营许可证：
+			   		</span>
+			   		<a href="" class="foot2-aa">浙网文[2015]0295-065号</a>
+			   		<a href="" class="foot2-aa"style="margin-left: 60px;">12318举报</a>
+			   		<a href="" class="foot2-aa"style="margin-left: 60px;"> 出版物网络交易平台服务经营备案证： 新出发浙备字第001号</a>
+			   		<span class="foot2-span">
+			   			互联网违法和不良信息举报电话：0571-81683755 blxxjb@alibaba-inc.com
+			   		</span>
+			   		<span class="foot2-span" style="margin-left: 60px;">
+			   			互联网药品信息服务资质证书编号：
+			   		</span>
+			   		<a href="" class="foot2-aa">浙-（经营性）-2017-0005</a>
+			   		<span class="foot2-span" style="margin-left: 60px;margin-top:15px;height:20px;width:20px;background: url(../img/TB1yEqRPXXXXXXPXpXXXXXXXXXX-20-20.png);">
+			   			
+			   		</span>
+			   	    <a href="" class="foot2-aa"> 浙公网安备 33010002000120号</a>
+			   	    <span class="foot2-span">
+			   			（浙）网械平台备字[2018]第00002号
+	© 2003-2018 TMALL.COM 版权所有
+			   		</span>
+			   	</div>
+			     
+			</div>
+	</body>
+</html>

@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+	</head>
+	
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		#nav{
+			
+			width: 100%;
+			background-color: #f2f2f2;
+			
+		}
+		#nav_text{
+			height: 27px;
+		}
+		#content{
+			width: 100%;
+			/*height: 1000px;*/
+			/*background-color: yellowgreen;*/
+			/*text-align: center;*/
+		}
+		
+		.center_content{
+			width: 1010px;
+			position:relative;
+			left: 175px;
+		}
+
+		#logo{
+			
+			height: 65px;
+			padding-top: 15px;
+			/*background-color: #FF0036;*/
+			
+		}
+		#goods_h1{
+			height: 40px;
+			/*background-color: #F2F2F2;*/
+		}
+		#table_head{
+			height: 50px;
+			background-color: #ffffff;
+			line-height: 50px;
+		}
+		#shop1_name{
+			height: 40px;
+			/*background-color: #FF0036;*/
+			line-height: 40px;
+		}
+		#result{
+			height: 50px;
+			background-color: #F2F2F2;
+			margin-top:15px;
+			line-height: 50px;
+		}
+		#other_goods{
+			height: 340px;
+			/*background-color: #F2F2F2;*/
+			margin-top: 50px;
+			margin-bottom: 50px;
+			border: 1px solid #F3F3F3;
+		}
+		#bottom{
+			height: 200px;
+			width: 100%;
+			background-color: black;
+		}
+		a{
+			text-decoration: none;
+			color: #9e9e9e;
+			font-size: 12px;
+		}
+		.nav_small_box{
+			height: 100%;
+			float: left;
+			/*border: 1px solid black;*/
+			margin-left:5px;
+			margin-right:5px;
+		}
+		.nav_small_box_rt{
+			height: 100%;
+			float: right;
+			margin-left:5px;
+			margin-right:5px;
+			
+		}
+		#logo_box{
+			height: 100%;
+			line-height: 80px;
+			float:left;
+		}
+		#search_box{
+			height: 50px;
+			/*line-height: 50px;*/
+			float: right;
+			margin-top: 20px;
+			/*background-color: red;*/
+		}
+		#input_search{
+			width: 450px;
+			height: 36px;
+			border: 3px solid #FF0036;
+			float:right;
+		}
+		#input_button{
+			width: 90px;
+			height: 36px;
+			border: 3px solid #FF0036;
+			background-color: #FF0036;
+			color:#ffffff;
+			float:right;
+			font-size: 16px;
+			line-height: 30px;
+		}
+		#goods_h1_box_left{
+			height: 30px;
+			float: left;
+			/*background-color: gray;*/
+			padding-top:10px;
+			color:#FF4501;
+			width: 120px;
+			font-weight: bold;
+			text-align: center;
+			border-bottom: 2px solid #FF4501;
+		}
+		span{
+			font-size: 12px;
+			color:#565656;
+		}
+		table{
+			border-collapse: collapse;
+		}
+		tr{
+			padding-top: 10px;
+			border: 1px solid #E4E4E4;
+			background-color: #FCFCFC;
+		}
+		td{
+			padding-top: 20px;
+			text-align: center;
+			vertical-align:top;
+		}
+		.goog_name_a{
+			font-size: 14px;
+			color: #565656;
+		}
+		.good_info_box{
+			width: 150px;
+			height: 100px;
+			/*border: 1px solid #FF0000;*/
+			/*background-color: #FFFFFF;*/
+			margin: 0 20px;
+			text-align: left;
+			padding-left: 10px;
+			font-size: 12px;
+			color:#9C9C9C;
+		}
+		.count{
+			border: 1px solid #AAAAAA;
+			width: 40px;
+			height: 25px;
+			display: inline-block;
+			line-height: 25px;
+		}
+		.add,.reduce{
+			border: 1px solid #F0F0F0;
+			height: 25px;
+			background-color: #F0F0F0;
+			display: inline-block;
+			width: 20px;
+			line-height: 25px;
+			margin-left: -5px;
+			margin-right: -5px;
+		}
+		.add,.reduce:hover{
+			cursor: pointer;
+		}
+		.count{
+			background-color: #FFFFFF;
+		}
+		#result_left{
+			height: 100%;
+			width: 300px;
+			float: left;
+			margin-left: 10px;
+		}
+		#result a{
+			color:#565656;
+			padding-left: 20px;
+		}
+		#result_rt{
+			height: 100%;
+			width: 600px;
+			float: right;
+			color:#565656;
+			font-size: 10px;
+		}
+		#result_rt input{
+			float: right;
+			height: 100%;
+			width: 120px;
+			font-size: 20px;
+			background-color: #B0B0B0;
+			color: #F2F2F2;
+			border: 0;
+			/*margin-left: 23px;*/
+		}
+		#master_price{
+			float: right;
+			font-size: 20px;
+			font-weight: bold;
+			padding-right: 20px;
+		}
+		#result_rt *{
+			float: right;
+		}
+		#master_amount{
+			font-size: 16px;
+			font-weight: bold;
+			padding-right: 10px;
+		}
+		#other_goods_text{
+			height: 50px;
+			line-height: 50px;
+			width: 990px;
+			background-color: #F3F3F3;
+			padding-left: 10px;
+			color: #8C8C8C;
+		}
+		#other_goods_photo{
+			/*width: 910px;*/
+			text-align: center;
+			padding: 30px;
+			/*background-color: red;*/
+		}
+		#other_goods_photo a{
+			float: left;
+			margin: 0 8px;
+		}
+		#more{
+			background-color: #7E7E7E;
+			float: right;
+			color:#FFFFFF;
+			height: 30px;
+			line-height: 30px;
+			padding: 0 5px;
+			position: relative;
+			top: 10px;
+			right: 10px;
+		}
+	</style>
+	
+	 <!--<link href="../css/bootstrap.min.css" rel="stylesheet"> 
+        <link href="../css/bootstrap-theme.min.css" rel="stylesheet"> -->
+	<link rel="stylesheet" type="text/css" href="../css/footer.css"/>
+	<body>
+		<div id="nav">
+			<div id="nav_text"class="center_content">
+				<!--左浮动-->
+				<div class="nav_small_box" style="margin-right: 0;line-height: 27px;">
+					<img src="../img/house.gif"/>
+				</div>
+				<div class="nav_small_box">
+					<a href="../index.html">天猫首页</a>
+				</div>
+				<div class="nav_small_box">
+					<a href="#">Hi，顾客1号</a>
+				</div>
+				<div class="nav_small_box" style="margin:0;line-height: 27px;">
+					<img src="../img/v.png"/>
+				</div>
+				<div class="nav_small_box" style="margin-left: 15px;">
+					<a href="#">积分</a>
+					<a href="#" style="color: #717171;font-weight: bold;">854</a>
+				</div>
+				<div class="nav_small_box" style="margin-left: 15px;">
+					<a href="#">消息</a>
+					<a href="#" style="color: #717171;font-weight: bold;">17</a>
+				</div>
+				<div class="nav_small_box" style="margin-left: 15px;">
+					<a href="#">退出</a>
+				</div>
+				<!--右浮动-->
+				<div class="nav_small_box_rt">
+					<a href="#">商家支持</a>
+				</div>
+				<div class="nav_small_box_rt">
+					<a href="#">企业购</a>
+				</div>
+				<div class="nav_small_box_rt">
+					<a href="#">淘宝网</a>
+				</div>
+				<div class="nav_small_box_rt" style="border-left: 1px solid #9E9E9E;height: 12px;margin-top:7px;">
+					
+				</div>
+				<div class="nav_small_box_rt">
+					<a href="#">收藏夹</a>
+				</div>
+				<div class="nav_small_box_rt" style="margin-right: 15px;margin: 0;">
+					<a href="#">购物车</a>
+				</div>
+				<div class="nav_small_box_rt" style="margin:0;line-height: 27px;">
+					<img src="../img/car.gif"/>
+				</div>
+				<div class="nav_small_box_rt" style="margin-right: 15px;margin-left: 0;">
+					<a href="#">我关注的品牌</a>
+				</div>
+				<div class="nav_small_box_rt" style="margin:0;line-height: 27px;">
+					<img src="../img/heart.png"/>
+				</div>
+				<div class="nav_small_box_rt" style="margin-right: 15px;margin-left: 0;">
+					<a href="#">我的淘宝</a>
+				</div>
+			</div>
+		</div>
+		<div id="content">
+			<div id="logo" class="center_content">
+				<div id="logo_box">
+					<a href="../index.html"><img src="../img/TMALL_logo.png" style="height: 27px;width: 180px;"/></a>
+				</div>
+				<div id="search_box">
+						<input type="button" id="input_button" value="搜   索" style="margin-left: -6px;"/>
+						<input type="search" id="input_search" required="" placeholder="  搜索 天猫 商品/品牌/店铺" x-webkit-speech="" x-webkit-grammar="builtin:search" lang="zh-CN">
+				</div>
+				
+			</div>
+			<div id="goods_h1" class="center_content" style="width: 1000px;">
+				<div id="goods_h1_box_left">
+					
+						全部商品  <span id="good_amount" style="font-size: 14px;color:#FF4501;">
+							2
+						</span>
+					
+				</div>
+				
+				
+			</div>
+			<hr style="color: #E6E6E6;position:relative;left:170px;background-color: #E6E6E6;" width="885px"/>
+			<!--<div id="" class="center_content" style="height: 55px;">
+				<hr />
+				
+			</div>-->
+			<div id="table_head" class="center_content">
+				<input type="checkbox" name="master_choose" id="master_choose" />
+				<span >
+					全选
+				</span>
+				<span style="margin-left: 20px;">
+					商品信息
+				</span>
+				<span style="margin-left: 450px;">
+					单价
+				</span>
+				<span style="margin-left: 80px;">
+					数量
+				</span>
+				<span style="margin-left: 80px;">
+					金额
+				</span>
+				<span style="margin-left: 100px;">
+					操作 
+				</span>
+			</div>
+			<div id="shop1_name" class="center_content">
+				
+					<input type="checkbox" name="shop_choose" id="shop_choose" />
+					<img src="../img/shop.png"/>
+					<span style="font-weight: bold;font-size: 14px;">店铺:</span>
+					<a href="#">富安娜官方旗舰店</a>
+				
+				
+				<img src="../img/youhuiquan.jpg"/ alt="优惠券" style="position: relative;top:8px;">
+			</div>
+			<table id="table-add"width="1000px" class="center_content">
+				<tr height="40px" style="background-color: #FFFFFF;">
+					<th colspan="8" style="text-align: left;">
+						<span style="margin-left:20px;padding:2px 4px;background-color: #E7E7E7;font-weight: normal;">满699送夏被</span>
+						<span style="color: #FF4400;">已享优惠：送送夏被（赠完即止）</span>
+					</th>
+				</tr>
+				<tr height="130px">
+					<td width="45px" class="check_td">
+						<input type="checkbox" name="choose" class="unit_choose"/>
+					</td>
+					<td width="82px">
+						<img src="../img/good1.jpg"/>
+					</td>
+					<td width="190" style="padding: 20px 5px;text-align: left;">
+						
+						<a href="#" class="goog_name_a">富安娜家纺馨而乐纯棉四件套  全面秋冬套件纯棉被套</a>
+						<br /><br />
+						<img src="../img/cun.png"/>
+					</td>
+					<td width="200px">
+						<div class="good_info_box">
+							适用床尺寸：1.8m（6英尺）<br />
+							床颜色分类：爱在不列颠
+						</div>
+					</td>
+					<td width="100px" class="unit_price">
+						<div style="text-decoration: line-through;font-size: 10px;color: #9C9C9C;">
+							￥1480.00
+						</div>
+						<div style="font-size: 10px;font-weight: bold;color: #565656;" class="unit_price_box">
+							￥<span>399.00</span>
+						</div>
+					</td>
+					<td width="120px" class="count_td">
+						<span class="reduce">
+							-
+						</span>
+						<span class="count">
+							1
+						</span>
+						<span class="add">
+							+
+						</span>
+					</td>
+					<td width="100px" class="all_price_td">
+						<div style="font-size: 10px;font-weight: bold;color: #FF0000;">
+							￥<span style="color: #FF0000;" class="all_price">399.00</span>
+						</div>
+					</td>
+					<td>
+						<a href="#" style="font-size: 14px;color: #565656;">移入收藏夹</a><br />
+						<a href="#" style="font-size: 14px;color: #565656;" class="delete">删除</a>
+					</td>
+				</tr>
+				<tr height="130px">
+					<td width="45px" class="check_td">
+						<input type="checkbox" name="choose" class="unit_choose" />
+					</td>
+					<td width="82px">
+						<img src="../img/good2.jpg"/>
+					</td>
+					<td width="190" style="padding: 20px 5px;text-align: left;">
+						
+						<a href="#" class="goog_name_a">富安娜家纺馨而乐1.5m床全棉四件套1.8m床纯棉套件</a>
+						<br /><br />
+						<img src="../img/cun.png"/>
+					</td>
+					<td width="200px">
+						<div class="good_info_box">
+							适用床尺寸：1.5m（5英尺）<br />
+							床颜色分类：青春絮语
+						</div>
+					</td>
+					<td width="100px" class="unit_price">
+						<div style="text-decoration: line-through;font-size: 10px;color: #9C9C9C;">
+							￥1280.00
+						</div>
+						<div class="unit_price_box" style="font-size: 10px;font-weight: bold;color: #565656;">
+							￥<span>580.00</span>
+						</div>
+					</td>
+					<td width="120px" class="count_td">
+						<span class="reduce">
+							-
+						</span>
+						<span class="count">
+							1
+						</span>
+						<span class="add">
+							+
+						</span>
+					</td>
+					<td width="100px" class="all_price_td">
+						<div style="font-size: 10px;font-weight: bold;color: #FF0000;">
+							￥<span style="color: #FF0000;" class="all_price">580.00</span>
+						</div>
+					</td>
+					<td>
+						<a href="#" style="font-size: 14px;color: #565656;">移入收藏夹</a><br />
+						<a href="#" style="font-size: 14px;color: #565656; "class="delete">删除</a>
+					</td>
+				</tr>
+				
+			</table>
+			
+			<div id="result" class="center_content">
+				<div id="result_left">
+					<input type="checkbox" name="all_choose" id="all_choose" />全选
+					<a href="#" id="master_delete" >删除</a>
+					<a href="#">移入收藏夹</a>
+					<a href="#">分享</a>
+				</div>
+				<div id="result_rt">
+					
+					
+					
+					
+					<input type="button" name="" id="count_btn" value="结算" />
+					<a href="#" style="color:#FF0036" id="master_price">0.00</a>
+					<span>
+						件&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					合计（不含运费）：
+					</span>
+					<a href="#" style="color:#FF0036" id="master_amount">0</a>
+					<span>
+						已选商品
+					</span>
+				</div>
+				
+			</div>
+			<div id="other_goods" class="center_content">
+				<div id="other_goods_text">
+					<span id="" style="font-size: 18px;color:#FF0008; font-weight:bold;">
+						Tmall
+					</span>
+					为您推荐
+					<!--Tmall为您推荐-->
+					<a href="#" id="more">
+						更多感兴趣商品
+					</a>
+				</div>
+				<div id="other_goods_photo">
+					<a href="#">
+						<img src="../img/t1.jpg"/>
+					</a>
+					<a href="#">
+						<img src="../img/t2.jpg"/>
+					</a>
+					<a href="#">
+						<img src="../img/t3.jpg"/>
+					</a>
+					<a href="#">
+						<img src="../img/t4.jpg" width="220px"/>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="footer"style="width:1199px;height: 200px;">
+			   	<div id="foot2"style="position:relative;">
+			   		<img src="../img/TMALL_cat.png"height="30px"style="position: absolute;top: -31px;"/>
+			   		
+			   		<p>
+			   			<a class="foot2-a"href="">关于天猫</a>
+				   		<a class="foot2-a"href="">帮助中心</a>
+				   		<a class="foot2-a"href="">开放平台</a>
+				   		<a class="foot2-a"href="">诚聘英才</a>
+				   		<a class="foot2-a"href="">联系我们</a>
+				   		<a class="foot2-a"href="">网站合作</a>
+				   		<a class="foot2-a"href="">法律声明</a>
+				   		<a class="foot2-a"href="">隐私权政策</a>
+				   		<a class="foot2-a"href="">知识产权</a>
+				   		<a class="foot2-a"href="">廉正举报</a>
+			   		</p>
+			   		<p>
+			   			<a href="" class="aa foot2-a">阿里巴巴集团</a>
+				   		<a href="" class="aa foot2-a">淘宝网</a>
+				   		<a href="" class="aa foot2-a">天猫</a>
+				   		<a href="" class="aa foot2-a">聚划算</a>
+				   		<a href="" class="aa foot2-a">全球速卖通</a>
+				   		<a href="" class="aa foot2-a">阿里巴巴国际交易市场</a>
+				   		<a href="" class="aa foot2-a">1688</a>
+				   		<a href="" class="aa foot2-a">阿里妈妈</a>
+				   		<a href="" class="aa foot2-a">飞猪</a>
+				   		<a href="" class="aa foot2-a">阿里云计算</a>
+				   		<a href="" class="aa foot2-a">AliOS</a>
+				   		<a href="" class="aa foot2-a">阿里通信</a>
+				   		<a href="" class="aa foot2-a">万网</a>
+				   		<a href="" class="aa foot2-a">高德</a>
+				   		<a href="" class="aa foot2-a">UC</a>
+				   		<a href="" class="aa foot2-a">友盟</a>
+				   		<a href="" class="aa foot2-a">虾米</a>
+				   		<a href="" class="aa foot2-a" style="border-right: 0;">支付宝</a>
+			   		</p>
+			   		<span class="foot2-span">增值电信业务经营许可证： </span>
+			   		<a href="" class="foot2-aa">浙B2-20110446</a>
+			   		<span class="foot2-span" style="margin-left: 60px;">
+			   			网络文化经营许可证：
+			   		</span>
+			   		<a href="" class="foot2-aa">浙网文[2015]0295-065号</a>
+			   		<a href="" class="foot2-aa"style="margin-left: 60px;">12318举报</a>
+			   		<a href="" class="foot2-aa"style="margin-left: 60px;"> 出版物网络交易平台服务经营备案证： 新出发浙备字第001号</a>
+			   		<span class="foot2-span">
+			   			互联网违法和不良信息举报电话：0571-81683755 blxxjb@alibaba-inc.com
+			   		</span>
+			   		<span class="foot2-span" style="margin-left: 60px;">
+			   			互联网药品信息服务资质证书编号：
+			   		</span>
+			   		<a href="" class="foot2-aa">浙-（经营性）-2017-0005</a>
+			   		<span class="foot2-span" style="margin-left: 60px;margin-top:15px;height:20px;width:20px;background: url(../img/TB1yEqRPXXXXXXPXpXXXXXXXXXX-20-20.png);">
+			   			
+			   		</span>
+			   	    <a href="" class="foot2-aa"> 浙公网安备 33010002000120号</a>
+			   	    <span class="foot2-span">
+			   			（浙）网械平台备字[2018]第00002号
+	© 2003-2018 TMALL.COM 版权所有
+			   		</span>
+			   	</div>
+			     
+			</div>
+		<!--<div id="bottom">
+			从猪大姨那里窃取
+		</div>-->
+		<script src="../js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(".add").click(function(){
+				//单价
+				var unit_price = parseInt($(this).parent().parent().children(".unit_price").children(".unit_price_box").children("span").html());
+				//数量
+				var amount = parseInt($(this).parent().parent().children(".count_td").children(".count").html());
+				amount++;
+				//更新数量
+				$(this).parent().parent().children(".count_td").children(".count").html(amount);
+				//总价
+				var all_price=(unit_price*amount).toFixed(2);
+				//更新总价
+				$(this).parent().parent().children(".all_price_td").children("div").children("span").html(all_price);
+				//如果已经选中，更新结算
+				if($(this).parent().parent().children(".check_td").children(".unit_choose").prop("checked")==true){
+					
+					changeMaster(1,unit_price);
+				}
+			});
+			$(".reduce").click(function(){
+				
+				//数量
+				var amount = parseInt($(this).parent().parent().children(".count_td").children(".count").html());
+				if(amount>1){
+					amount--;
+					//更新数量
+					$(this).parent().parent().children(".count_td").children(".count").html(amount);
+					//单价
+					var unit_price = parseInt($(this).parent().parent().children(".unit_price").children(".unit_price_box").children("span").html());
+					
+					//总价
+					var all_price=(unit_price*amount).toFixed(2);
+					//更新总价
+					$(this).parent().parent().children(".all_price_td").children("div").children("span").html(all_price);
+					//如果已经选中，更新结算
+					if($(this).parent().parent().children(".check_td").children(".unit_choose").prop("checked")==true){
+						
+						changeMaster(-1,-unit_price);
+					}
+				}
+				
+			});
+			//alert($("input[name='choose']").prop("checked"));
+			$(".unit_choose").change(function(){
+					//alert("复选框状态改变了");
+					if($(this).prop("checked")==true){
+						//选中
+						//变色
+						$(this).parent().parent().css("background-color","#FFF8E1");
+						//获取相加价格
+						var add_price = parseInt($(this).parent().parent().children(".all_price_td").children("div").children(".all_price").html());
+						//获取相加数量
+						var add_amount = parseInt($(this).parent().parent().children(".count_td").children(".count").html());
+						changeMaster(add_amount,add_price);
+						//alert("数量"+master_amount+"结算"+master_price);
+					}else{
+						//取消选择
+						//变色
+						$(this).parent().parent().css("background-color","#FCFCFC");
+						var add_price = parseInt($(this).parent().parent().children(".all_price_td").children("div").children(".all_price").html());
+						//获取相加数量
+						var add_amount = parseInt($(this).parent().parent().children(".count_td").children(".count").html());
+						changeMaster(-add_amount,-add_price);
+					}
+				
+			});
+			
+			$("#all_choose,#shop_choose,#master_choose").change(function(){
+				var unit_choose = $(".unit_choose");
+				if($(this).prop("checked")==true){		
+					for(var i=0;i<unit_choose.length;i++){
+						if(unit_choose.eq(i).prop("checked")==false){
+							unit_choose.eq(i).prop("checked",true).trigger("change");
+						}
+					}
+				}else{
+					for(var i=0;i<unit_choose.length;i++){
+						if(unit_choose.eq(i).prop("checked")==true){
+							unit_choose.eq(i).prop("checked",false).trigger("change");
+						}
+					}
+				}
+			});
+	
+		$(".delete").click(function(){
+			var msg = confirm("确定要删除此件宝贝吗？");
+			if(msg==true){
+				var add_price = parseInt($(this).parent().parent().children(".all_price_td").children("div").children(".all_price").html());
+				//获取相加数量
+				var add_amount = parseInt($(this).parent().parent().children(".count_td").children(".count").html());
+				changeMaster(-add_amount,-add_price);
+				$(this).parent().parent().remove();
+			}
+			
+		});
+		$("#master_delete").click(function(){
+			
+			
+			var unit_choose = $(".unit_choose:checked");
+			if(unit_choose.length>0){
+				var msg = confirm("确定要删除些宝贝吗？");
+				if(msg==true){
+					for(var i=0;i<unit_choose.length;i++){
+					var add_price = parseInt(unit_choose.eq(i).parent().parent().children(".all_price_td").children("div").children(".all_price").html());
+					//获取相加数量
+					var add_amount = parseInt(unit_choose.eq(i).parent().parent().children(".count_td").children(".count").html());
+					changeMaster(-add_amount,-add_price);
+					unit_choose.eq(i).parent().parent().remove();
+					}
+				}
+			}else{
+				alert("未选中宝贝");
+			}
+			
+		});
+		//更新结算
+		function changeMaster(add_amount,add_price){
+			//总价计算
+			var master_price = (parseInt($("#master_price").html())+add_price).toFixed(2);
+			//总数量计算
+			var master_amount = parseInt($("#master_amount").html())+add_amount;
+			//结算按钮
+			if(master_amount>0){
+				$("#count_btn").css("background-color","#FF4400");
+			}else{
+				$("#count_btn").css("background-color","#B0B0B0");
+			}
+			//更新
+			$("#master_price").html(master_price);
+			$("#master_amount").html(master_amount);
+		}
+			
+		</script>
+	</body>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+    
+    <script src="../dist/js/swiper.jquery.min.js"></script>
+	<!--<script type="text/javascript" src="../dist/js/swiper.min.js"></script>
+	<script>-->
+</html>

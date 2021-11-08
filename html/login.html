@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>理想生活上天猫</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			.header {
+				width: 100%;
+				height: 89px;
+			}
+			
+			#logo {
+				width: 178px;
+				height: 26px;
+				margin: 32px auto 32px 81px;
+			}
+			
+			.form-inner {
+				width: 350px;
+				height: 405px;
+				background-color: white;
+				float: right;
+				margin-top: 80px;
+				margin-right: 148px;
+			}
+			
+			.word{
+				display: block;
+			}
+			.pc{
+				display:none;
+			}
+			.content {
+				background-image: url(../img/loginpic.png);
+				width: 1349px;
+				height: 600px;
+			}
+			#scanlogin{
+				margin-top:10px;
+				margin-left:145px;
+				width:200px;
+				height:57px;
+			}
+			#pclogin{
+				margin-top:13px;
+				margin-left:287px;
+				width:57px;
+				height:45px;
+			}
+			#logindiv{
+				margin-left:27px;
+				margin-top:-21px;
+				font-weight:bold;
+				font-family:"微软雅黑";
+				color:dimgrey;	
+				display:block;	
+			}
+			#logindiv1{
+				margin-left:27px;
+				margin-top:-21px;
+				font-weight:bold;
+				font-family:"微软雅黑";
+				color:dimgrey;	
+				display:block;	
+			}
+			#noteup{
+				width: 263px;
+				height: 28px;
+				background-color:#FEF2F2;
+				background-image: url(../img/finebtn.png);
+				background-repeat: no-repeat;
+				margin-left:25px;
+				margin-top:-23px;
+				padding-left:35px;
+				padding-top: 8px;
+				font-family:"微软雅黑";
+				color:#797979;
+				font-size:12px;	
+				display:none;
+			}
+			#noteu{
+				width: 263px;
+				height: 28px;
+				background-color:#FEF2F2;
+				background-image: url(../img/finebtn.png);
+				background-repeat: no-repeat;
+				margin-left:25px;
+				margin-top:-23px;
+				padding-left:35px;
+				padding-top: 8px;
+				font-family:"微软雅黑";
+				color:#797979;
+				font-size:12px;	
+				display: none;
+			}
+			#notep{
+				width: 263px;
+				height: 28px;
+				background-color:#FEF2F2;
+				background-image: url(../img/finebtn.png);
+				background-repeat: no-repeat;
+				margin-left:25px;
+				margin-top:-23px;
+				padding-left:35px;
+				padding-top: 8px;
+				font-family:"微软雅黑";
+				color:#797979;
+				font-size:12px;	
+				display: none;
+			}
+			#notew{
+				width: 263px;
+				height:43px;
+				background-color:#FEF2F2;
+				background-image: url(../img/finebtn.png);
+				background-repeat: no-repeat;
+				margin-left:25px;
+				margin-top:-23px;
+				padding-left:35px;
+				padding-top: 8px;
+				font-family:"微软雅黑";
+				color:#797979;
+				font-size:12px;	
+				display: none;
+			}
+			#userid{
+				width: 245px;
+				height: 40px;
+				background-image: url(../img/user.png);
+				background-position:left;
+				background-repeat: no-repeat;
+				padding-left: 50px;
+				margin-left: 25px;
+				font-size:14px;
+			}
+			#userpw{
+				width: 245px;
+				height: 40px;
+				background-image: url(../img/password.png);
+				background-position:left;
+				background-repeat: no-repeat;
+				padding-left: 50px;
+				margin-left: 25px;
+				font-size:14px;
+			}
+			#loginbtn{
+				width: 300px;
+				height: 40px;
+				margin-left: 25px;
+				background-color:#FF0036;
+				border-radius:4px;
+				border:none;
+				text-align: center;
+				font-size:16px;
+				color:#FFFFFF;
+				font-family: "微软雅黑";
+				font-weight:bold;
+			}
+			#loginbtn:hover{
+				background-color:#FF335E;
+			}
+			#phonelogin{
+				color:#797979;
+				font-size:12px;
+				width: 180px;
+				height:30px;
+				/*margin-top:41px;*/
+				margin-left:87px;
+			}
+			/*#twocode{
+				
+			}
+			#twocode:hover{
+				margin-right:70px;
+			}*/
+			a{
+				text-decoration:none;
+				color:#797979;
+				font-size:12px;
+			  }
+			a:hover{
+				color:#FF0036;
+			}
+			.forget{
+				text-decoration: none;
+				color:#FF0036;
+			}
+			.shop{
+				text-decoration: none;
+				color:#FF0036;
+			}
+			#littlescan{
+				float: left;
+			}
+			.scanli{
+				list-style: none;
+				width: 300px;
+			}
+		</style>
+		
+		<link rel="stylesheet" type="text/css" href="../css/footer.css"/>
+		
+	</head>
+
+	<body>
+		<div id="fullscreen">
+			<div class="header">
+				<a><img id="logo" src="../img/logo.png" /></a>
+			</div>
+
+			<div class="content">
+				<div class="form-inner word">
+					<form action="#" method="get">
+						<div id="scanlogin">
+							<img src="../img/scan.png"/>
+						</div>
+						<div id="logindiv">密码登陆</div>
+						<div id="noteup">请输入账户名和密码</div>
+						<div id="noteu">请填写账户名</div>
+						<div id="notep">请输密码</div>
+						<div id="notew">
+							你输入的密码和账户名不匹配，是否<a class="forget">忘记密码</a>或
+							<a class="forget">忘记会员名</a>
+						</div>
+						<div style="height:26px;"></div>
+							<input type="text" name="" id="userid" value="" placeholder="会员名/邮箱/手机号" />
+						
+						<div style="height:26px;">	
+						</div>
+						<input type="password" name="" id="userpw" value="" />
+						<div style="height:20px;">	
+						</div>
+						<input type="button" value="登&nbsp录" id="loginbtn"/>
+						<div style="height:28px;">	
+						</div>
+						<div style="margin-left:130px">
+						<a href="#">忘记密码</a>
+						<a href="#">忘记用户名</a>
+						<a href="join.html">免费注册</a>
+						</div>
+					</form>
+				</div>
+				
+				<!--这是手机扫码页面-->
+			 <div class="form-inner pc">
+				<div id="pclogin">
+					<img src="../img/pc.jpg"/>
+				</div>
+				<div id="logindiv1">手机扫码，安全登录</div>
+				
+					<div style="width:350px;height: 195px;text-align:center;vertical-align: middle;display: table-cell;">
+						<img src="../img/twocode.png"  id="twocode"/>
+						
+					</div>
+				<div id="phonelogin">
+						<img src="../img/littlescan.png" id="littlescan" />
+						<ul><li class="scanli">&ensp;打开&ensp;<a class="shop">手机天猫</a>&ensp;|&ensp;<a class="shop">手机淘宝</a></li>
+					<li class="scanli">&ensp;扫一扫登录</li>
+						</ul>
+					</div>	
+			
+				<div  style="height:26px;">	
+				</div>
+				<div style="margin-left:205px">
+					<a href="#">密码登录</a>
+					<a href="join.html">免费注册</a>
+				</div>
+			  </div>	
+			</div>
+			
+		</div>
+		<div id="footer"style="width:1199px;height: 200px;">
+		   	<div id="foot2"style="position:relative;margin-top: 0;background: white;border: none;">
+		   		
+		   		<p>
+		   			<a class="foot2-a"href=""style="color: black;">关于天猫</a>
+			   		<a class="foot2-a"href=""style="color: black;">帮助中心</a>
+			   		<a class="foot2-a"href=""style="color: black;">开放平台</a>
+			   		<a class="foot2-a"href=""style="color: black;">诚聘英才</a>
+			   		<a class="foot2-a"href=""style="color: black;">联系我们</a>
+			   		<a class="foot2-a"href=""style="color: black;">网站合作</a>
+			   		<a class="foot2-a"href=""style="color: black;">法律声明</a>
+			   		<a class="foot2-a"href=""style="color: black;">隐私权政策</a>
+			   		<a class="foot2-a"href=""style="color: black;">知识产权</a>
+			   		<a class="foot2-a"href=""style="color: black;">廉正举报</a>
+		   		</p>
+		   		<p>
+		   			<a href="" class="aa foot2-a"style="color: black;">阿里巴巴集团</a>
+			   		<a href="" class="aa foot2-a"style="color: black;">淘宝网</a>
+			   		<a href="" class="aa foot2-a"style="color: black;">天猫</a>
+			   		<a href="" class="aa foot2-a"style="color: black;">聚划算</a>
+			   		<a href="" class="aa foot2-a"style="color: black;">全球速卖通</a>
+			   		<a href="" class="aa foot2-a"style="color: black;">阿里巴巴国际交易市场</a>
+			   		<a href="" class="aa foot2-a"style="color: black;">1688</a>
+			   		<a href="" class="aa foot2-a"style="color: black;">阿里妈妈</a>
+			   		<a href="" class="aa foot2-a"style="color: black;">飞猪</a>
+			   		<a href="" class="aa foot2-a"style="color: black;">阿里云计算</a>
+			   		<a href="" class="aa foot2-a"style="color: black;">AliOS</a>
+			   		<a href="" class="aa foot2-a"style="color: black;">阿里通信</a>
+			   		<a href="" class="aa foot2-a"style="color: black;">万网</a>
+			   		<a href="" class="aa foot2-a"style="color: black;">高德</a>
+			   		<a href="" class="aa foot2-a"style="color: black;">UC</a>
+			   		<a href="" class="aa foot2-a"style="color: black;">友盟</a>
+			   		<a href="" class="aa foot2-a"style="color: black;">虾米</a>
+			   		<a href="" class="aa foot2-a" style="color: black; border-right: 0;">支付宝</a>
+		   		</p>
+		   		<span class="foot2-span"style="color: #555555;">增值电信业务经营许可证： </span>
+		   		<a href="" class="foot2-aa">浙B2-20110446</a>
+		   		<span class="foot2-span" style="margin-left: 60px;color: #555555;">
+		   			网络文化经营许可证：
+		   		</span>
+		   		<a href="" class="foot2-aa">浙网文[2015]0295-065号</a>
+		   		<a href="" class="foot2-aa"style="margin-left: 60px;">12318举报</a>
+		   		<a href="" class="foot2-aa"style="margin-left: 60px;"> 出版物网络交易平台服务经营备案证： 新出发浙备字第001号</a>
+		   		<span class="foot2-span"style="color: #555555;">
+		   			互联网违法和不良信息举报电话：0571-81683755 blxxjb@alibaba-inc.com
+		   		</span>
+		   		<span class="foot2-span" style="margin-left: 60px;color: #555555;">
+		   			互联网药品信息服务资质证书编号：
+		   		</span>
+		   		<a href="" class="foot2-aa"style="color: #555555;">浙-（经营性）-2017-0005</a>
+		   		<span class="foot2-span" style="margin-left: 60px;margin-top:15px;height:20px;width:20px;background: url(../img/TB1yEqRPXXXXXXPXpXXXXXXXXXX-20-20.png);">
+		   			
+		   		</span>
+		   	    <a href="" class="foot2-aa"> 浙公网安备 33010002000120号</a>
+		   	    <span class="foot2-span">
+		   			（浙）网械平台备字[2018]第00002号
+© 2003-2018 TMALL.COM 版权所有
+		   		</span>
+		   	</div>
+		     
+		</div>
+		<script type="text/javascript" src="../js/jquery-3.3.1.min.js" ></script>
+		<script>
+			$("#loginbtn").click(function(){
+			if($("#userid").val()=="" && $("#userpw").val()==""){	
+					$("#logindiv").css("display","none");
+					$("#noteu").css("display","none");
+					$("#notep").css("display","none");
+					$("#notew").css("display","none");
+					$("#noteup").css("display","block");
+			}
+			if($("#userid").val()=="" && $("#userpw").val()!=""){	
+					$("#logindiv").css("display","none");
+					$("#notep").css("display","none");
+					$("#notew").css("display","none");
+					$("#noteup").css("display","none");
+					$("#noteu").css("display","block");
+			}
+			 
+			if($("#userpw").val()=="" && $("#userid").val()!=""){	
+					$("#logindiv").css("display","none");
+					$("#notep").css("display","block");
+					$("#notew").css("display","none");
+					$("#noteup").css("display","none");
+					$("#noteu").css("display","none");
+			} 
+			
+			if($("#userpw").val()!="" && $("#userid").val()!=""){	
+					$("#logindiv").css("display","block");
+					$("#notep").css("display","none");
+					$("#notew").css("display","none");
+					$("#noteup").css("display","none");
+					$("#noteu").css("display","none");
+					window.location.href="index.html";
+			} 
+			
+			});
+			
+			$("#scanlogin").click(function(){
+				$(".word").css("display","none");
+				$(".pc").css("display","block");
+			});
+			$("#pclogin").click(function(){
+				$(".pc").css("display","none");
+				$(".word").css("display","block");
+			});
+		</script>
+	</body>
+
+</html>
